@@ -5,62 +5,62 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://parobalth.github.io/</loc>
-<lastmod>2015-09-29T18:05:09-00:00</lastmod>
+<lastmod>2015-09-29T18:22:32-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://parobalth.github.io/archives.html</loc>
-<lastmod>2015-09-29T18:05:09-00:00</lastmod>
+<lastmod>2015-09-29T18:22:32-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://parobalth.github.io/tags.html</loc>
-<lastmod>2015-09-29T18:05:09-00:00</lastmod>
+<lastmod>2015-09-29T18:22:32-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://parobalth.github.io/categories.html</loc>
-<lastmod>2015-09-29T18:05:09-00:00</lastmod>
+<lastmod>2015-09-29T18:22:32-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://parobalth.github.io/todays-webtip-bythomcom.html</loc>
+<loc>http://parobalth.github.io/todays-webtip-bythomcom</loc>
 <lastmod>2015-09-17T22:15:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://parobalth.github.io/soupio.html</loc>
+<loc>http://parobalth.github.io/soupio</loc>
 <lastmod>2015-09-15T21:45:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://parobalth.github.io/vim-system-clipboard.html</loc>
+<loc>http://parobalth.github.io/vim-system-clipboard</loc>
 <lastmod>2015-09-06T17:18:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://parobalth.github.io/first-post.html</loc>
+<loc>http://parobalth.github.io/first-post</loc>
 <lastmod>2015-09-06T17:55:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://parobalth.github.io/hello_world.html</loc>
+<loc>http://parobalth.github.io/hello_world</loc>
 <lastmod>2015-09-05T18:20:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
