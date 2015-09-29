@@ -20,7 +20,7 @@ http://www.tipue.com/search
                'descriptiveWords'       : 25,
                'highlightTerms'         : true,
                'highlightEveryTerm'     : false,
-               'mode'                   : 'json',
+               'mode'                   : 'static',
                'liveDescription'        : '*',
                'liveContent'            : '*',
                'contentLocation'        : 'tipuesearch/tipuesearch_content.json'
