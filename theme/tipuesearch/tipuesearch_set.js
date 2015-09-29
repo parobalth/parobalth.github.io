@@ -29,7 +29,7 @@ function showGetResult()
      var result = new Array();
      var scriptUrl = 'sitemap.xml';
      $.ajax({
-        url: scripturl,
+        url: scriptUrl,
         type: 'GET',
         dataType: 'xml',
         async: false,
