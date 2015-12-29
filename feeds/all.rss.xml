@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Parobalth</title><link>http://parobalth.github.io/</link><description></description><atom:link href="http://parobalth.github.io/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 29 Dec 2015 15:06:00 +0100</lastBuildDate><item><title>Holiday Testing</title><link>http://parobalth.github.io/test-post</link><description>&lt;p&gt;Using the holidays for some testing!
-Happy Holidays to all of&amp;nbsp;you!&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Parobalth</title><link>http://parobalth.github.io/</link><description></description><atom:link href="http://parobalth.github.io/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 29 Dec 2015 21:06:00 +0100</lastBuildDate><item><title>Holiday Testing</title><link>http://parobalth.github.io/test-post</link><description>&lt;p&gt;Using the holidays for some testing!
+&lt;code&gt;Happy Holidays&lt;/code&gt; to all of&amp;nbsp;you!&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;def foobar():&lt;/code&gt;&lt;/p&gt;
 &lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Hello World&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -8,7 +8,11 @@ Happy Holidays to all of&amp;nbsp;you!&lt;/p&gt;
 
 &lt;p&gt;More&amp;nbsp;code:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;To follow the path
-&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Parobalth</dc:creator><pubDate>Tue, 29 Dec 2015 15:06:00 +0100</pubDate><guid>tag:parobalth.github.io,2015-12-29:test-post</guid></item><item><title>Christmas Songs</title><link>http://parobalth.github.io/christmas-songs</link><description>&lt;p&gt;Christmas is coming! It&amp;#8217;s already December. To bring you into christmas mood I&amp;#8217;m sharing links to some of my favorite christmas&amp;nbsp;songs:&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Copyheart:
+&lt;a href="http://copyheart.org"&gt;♡&lt;/a&gt;2015 by Parobalth. Copying is an act of love, please&amp;nbsp;share.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Parobalth</dc:creator><pubDate>Tue, 29 Dec 2015 21:06:00 +0100</pubDate><guid>tag:parobalth.github.io,2015-12-29:test-post</guid></item><item><title>Christmas Songs</title><link>http://parobalth.github.io/christmas-songs</link><description>&lt;p&gt;Christmas is coming! It&amp;#8217;s already December. To bring you into christmas mood I&amp;#8217;m sharing links to some of my favorite christmas&amp;nbsp;songs:&lt;/p&gt;
 &lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;Have Yourself a Merry Little Christmas&amp;#8221; by Frank Sinatra:
 &lt;a class="reference external" href="https://www.youtube.com/watch?v=nZ6yQgBvuoI"&gt;https://www.youtube.com/watch?v=nZ6yQgBvuoI&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;White Christmas&amp;#8221; Bing Crosby &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Martha Mears:
