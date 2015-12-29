@@ -2,7 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Parobalth</title><link href="http://parobalth.github.io/" rel="alternate"></link><link href="http://parobalth.github.io/feeds/all.atom.xml" rel="self"></link><id>http://parobalth.github.io/</id><updated>2015-12-29T15:06:00+01:00</updated><entry><title>Holiday Testing</title><link href="http://parobalth.github.io/test-post" rel="alternate"></link><updated>2015-12-29T15:06:00+01:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2015-12-29:test-post</id><summary type="html">&lt;p&gt;Using the holidays for some testing!
 Happy Holidays to all of&amp;nbsp;you!&lt;/p&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;def &lt;span class="pre"&gt;foobar():&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
-&lt;p&gt;and back to normal&amp;nbsp;again&amp;#8230;&lt;/p&gt;
+&lt;p&gt;and back to normal again&amp;#8230;
+.. code-block::&amp;nbsp;python&lt;/p&gt;
+&lt;blockquote&gt;
+print(&amp;#8216;Hello World&amp;#8217;)&lt;/blockquote&gt;
 </summary></entry><entry><title>Christmas Songs</title><link href="http://parobalth.github.io/christmas-songs" rel="alternate"></link><updated>2015-12-01T19:50:00+01:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2015-12-01:christmas-songs</id><summary type="html">&lt;p&gt;Christmas is coming! It&amp;#8217;s already December. To bring you into christmas mood I&amp;#8217;m sharing links to some of my favorite christmas&amp;nbsp;songs:&lt;/p&gt;
 &lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;Have Yourself a Merry Little Christmas&amp;#8221; by Frank Sinatra:
 &lt;a class="reference external" href="https://www.youtube.com/watch?v=nZ6yQgBvuoI"&gt;https://www.youtube.com/watch?v=nZ6yQgBvuoI&lt;/a&gt;&lt;/p&gt;
