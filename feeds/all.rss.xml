@@ -3,6 +3,7 @@
 Happy Holidays to all of&amp;nbsp;you!&lt;/p&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;def &lt;span class="pre"&gt;foobar():&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
 &lt;p&gt;and back to normal again&amp;#8230;
+:::reST
 .. code-block::&amp;nbsp;python&lt;/p&gt;
 &lt;blockquote&gt;
 print(&amp;#8216;Hello World&amp;#8217;)&lt;/blockquote&gt;
