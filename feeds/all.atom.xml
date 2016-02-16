@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Parobalth</title><link href="http://parobalth.github.io/" rel="alternate"></link><link href="http://parobalth.github.io/feeds/all.atom.xml" rel="self"></link><id>http://parobalth.github.io/</id><updated>2015-12-29T21:06:00+01:00</updated><entry><title>Holiday Testing</title><link href="http://parobalth.github.io/test-post" rel="alternate"></link><updated>2015-12-29T21:06:00+01:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2015-12-29:test-post</id><summary type="html">&lt;p&gt;Using the holidays for some testing!
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Parobalth</title><link href="http://parobalth.github.io/" rel="alternate"></link><link href="http://parobalth.github.io/feeds/all.atom.xml" rel="self"></link><id>http://parobalth.github.io/</id><updated>2016-02-16T22:24:38+01:00</updated><entry><title>Note your last command</title><link href="http://parobalth.github.io/ncmd" rel="alternate"></link><updated>2016-02-16T22:24:38+01:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2016-02-16:ncmd</id><summary type="html">&lt;p&gt;Some time ago I started to append neat commands I don&amp;#8217;t want to forget to a file in my home directory (e.g &lt;code&gt;echo 'foo' &amp;gt;&amp;gt; ~/commands.txt&lt;/code&gt;). So I had to navigate to a previous command with &lt;code&gt;CTRL-p&lt;/code&gt;, add &amp;#8220;echo&amp;#8221;, wrap it in singlequotes and add the path to my notes file. Quite a long process to append one command to a file. I already knew that &lt;code&gt;!!&lt;/code&gt; repeats the last command but not how to get it into a file instead of being executed. Actually it works quite simple with &lt;code&gt;echo "!!" &amp;gt;&amp;gt; ~/commands.txt&lt;/code&gt; (which appends your last command to the file &amp;#8216;commands.txt&amp;#8217; in your home directory). I still wanted an easier solution so I created the following bash alias to save me some typing and to be less distraction from the actual task I&amp;#8217;m trying to get&amp;nbsp;done:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;alias &lt;/span&gt;&lt;span class="nv"&gt;ncmd&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;echo $1 &amp;gt;&amp;gt; ~/commands.md&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;I added the above line to my &amp;#8220;~/.bash_aliases&amp;#8221; file and&amp;nbsp;ran &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;. .bash_aliases
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;to source it. Then I started to test the above solution and noticed issues with complex arguments and wildcards. I also read that it&amp;#8217;s not recommended to use variables in bash aliases. So I searched for a proper solution and learned quite a lot about bash syntax and how to define&amp;nbsp;functions. &lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;a class="headerlink" href="#solution" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;My final solution is the following function in my .bashrc&amp;nbsp;file:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;nn &lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$@&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; commands.txt
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3 id="the-power-of-history-expansion"&gt;The power of history expansion&lt;a class="headerlink" href="#the-power-of-history-expansion" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Now you can use all the power of history expansion as an argument to the function &lt;code&gt;nn&lt;/code&gt;. For example &lt;code&gt;nn "!!"&lt;/code&gt; appends the last command, &lt;code&gt;nn "!-5"&lt;/code&gt; appends the 5th last, &lt;code&gt;nn "!100"&lt;/code&gt; the 100th command in your history file, &lt;code&gt;nn "!ssh"&lt;/code&gt; appends all commands with ssh. Read &lt;code&gt;man history&lt;/code&gt; for further examples. Double quotes are&amp;nbsp;mandatory. &lt;/p&gt;
+&lt;p&gt;You can also add explanations like &lt;code&gt;nn "Commands to copy foo to bar:"&lt;/code&gt; and then append the appropriate&amp;nbsp;commands. &lt;/p&gt;
+&lt;p&gt;Screenshot:
+&lt;img alt="screenshot" src="./images/foo-capture.png" /&gt;&lt;/p&gt;
+&lt;h2 id="fc-fix-command"&gt;fc - fix command&lt;a class="headerlink" href="#fc-fix-command" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;fc is a little programm to list or edit and re-execute commands from the history list.&amp;nbsp;Read&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;help fc&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Copyheart:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://copyheart.org"&gt;♡&lt;/a&gt;2015 by Parobalth. Copying is an act of love, please&amp;nbsp;share.&lt;/p&gt;</summary></entry><entry><title>Holiday Testing</title><link href="http://parobalth.github.io/test-post" rel="alternate"></link><updated>2015-12-29T21:06:00+01:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2015-12-31:test-post</id><summary type="html">&lt;p&gt;Using the holidays for some testing!
 &lt;code&gt;Happy Holidays&lt;/code&gt; to all of&amp;nbsp;you!&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;def foobar():&lt;/code&gt;&lt;/p&gt;
 &lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Hello World&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
