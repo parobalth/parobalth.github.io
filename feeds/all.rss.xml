@@ -19,7 +19,7 @@
 
 
 &lt;h3 id="the-power-of-history-expansion"&gt;The power of history expansion&lt;a class="headerlink" href="#the-power-of-history-expansion" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Now you can use all the power of history expansion as an argument to the function &lt;code&gt;nn&lt;/code&gt;. For example &lt;code&gt;nn "!!"&lt;/code&gt; appends the last command, &lt;code&gt;nn "!-5"&lt;/code&gt; appends the 5th last, &lt;code&gt;nn "!100"&lt;/code&gt; the 100th command in your history file, &lt;code&gt;nn "!ssh"&lt;/code&gt; appends all commands with ssh. Read &lt;code&gt;man history&lt;/code&gt; for further examples. Double quotes are&amp;nbsp;mandatory. &lt;/p&gt;
+&lt;p&gt;Now you can use all the power of history expansion as an argument to the function &lt;code&gt;nn&lt;/code&gt;. For example &lt;code&gt;nn "!!"&lt;/code&gt; appends the last command, &lt;code&gt;nn "!-5"&lt;/code&gt; appends the 5th last, &lt;code&gt;nn "!100"&lt;/code&gt; the 100th command in your history file, &lt;code&gt;nn "!ssh"&lt;/code&gt; appends the first command with ssh in it. Read &lt;code&gt;man history&lt;/code&gt; for further examples. Double quotes are&amp;nbsp;mandatory. &lt;/p&gt;
 &lt;p&gt;You can also add explanations like &lt;code&gt;nn "Commands to copy foo to bar:"&lt;/code&gt; and then append the appropriate&amp;nbsp;commands. &lt;/p&gt;
 &lt;p&gt;Screenshot:
 &lt;img alt="screenshot" src="./images/foo-capture.png" /&gt;&lt;/p&gt;
