@@ -4,98 +4,98 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>parobalth.github.io/</loc>
-<lastmod>2016-03-06T22:54:54-00:00</lastmod>
+<loc>http://localhost:8000/</loc>
+<lastmod>2016-03-06T23:01:30-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>parobalth.github.io/archives.html</loc>
-<lastmod>2016-03-06T22:54:54-00:00</lastmod>
+<loc>http://localhost:8000/archives.html</loc>
+<lastmod>2016-03-06T23:01:30-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>parobalth.github.io/tags.html</loc>
-<lastmod>2016-03-06T22:54:54-00:00</lastmod>
+<loc>http://localhost:8000/tags.html</loc>
+<lastmod>2016-03-06T23:01:30-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>parobalth.github.io/categories.html</loc>
-<lastmod>2016-03-06T22:54:54-00:00</lastmod>
+<loc>http://localhost:8000/categories.html</loc>
+<lastmod>2016-03-06T23:01:30-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>parobalth.github.io/vim-run-line</loc>
+<loc>http://localhost:8000/vim-run-line</loc>
 <lastmod>2016-03-06T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>parobalth.github.io/ncmd</loc>
+<loc>http://localhost:8000/ncmd</loc>
 <lastmod>2016-02-17T21:06:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>parobalth.github.io/test-post</loc>
+<loc>http://localhost:8000/test-post</loc>
 <lastmod>2015-12-29T21:06:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>parobalth.github.io/christmas-songs</loc>
+<loc>http://localhost:8000/christmas-songs</loc>
 <lastmod>2015-12-01T19:50:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>parobalth.github.io/todays-webtip-blogjoemcnallycom</loc>
+<loc>http://localhost:8000/todays-webtip-blogjoemcnallycom</loc>
 <lastmod>2015-09-30T18:26:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>parobalth.github.io/todays-webtip-bythomcom</loc>
+<loc>http://localhost:8000/todays-webtip-bythomcom</loc>
 <lastmod>2015-09-17T22:15:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>parobalth.github.io/soupio</loc>
+<loc>http://localhost:8000/soupio</loc>
 <lastmod>2015-09-15T21:45:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>parobalth.github.io/vim-system-clipboard</loc>
+<loc>http://localhost:8000/vim-system-clipboard</loc>
 <lastmod>2015-09-06T17:18:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>parobalth.github.io/first-post</loc>
+<loc>http://localhost:8000/first-post</loc>
 <lastmod>2015-09-06T17:55:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>parobalth.github.io/hello_world</loc>
+<loc>http://localhost:8000/hello_world</loc>
 <lastmod>2015-09-05T18:20:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
