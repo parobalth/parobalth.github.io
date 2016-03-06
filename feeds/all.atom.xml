@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Parobalth</title><link href="http://parobalth.github.io/" rel="alternate"></link><link href="http://parobalth.github.io/feeds/all.atom.xml" rel="self"></link><id>http://parobalth.github.io/</id><updated>2016-02-17T21:06:00+01:00</updated><entry><title>Note your last command</title><link href="http://parobalth.github.io/ncmd" rel="alternate"></link><updated>2016-02-17T21:06:00+01:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2016-02-16:ncmd</id><summary type="html">&lt;p&gt;Some time ago I started to append neat commands I don&amp;#8217;t want to forget to a file in my home directory (e.g &lt;code&gt;echo 'foo' &amp;gt;&amp;gt; ~/commands.txt&lt;/code&gt;). So I had to navigate to a previous command with &lt;code&gt;CTRL-p&lt;/code&gt;, add &amp;#8220;echo&amp;#8221;, wrap it in singlequotes and add the path to my notes file. Quite a long process to append one command to a file. I already knew that &lt;code&gt;!!&lt;/code&gt; repeats the last command but not how to get it into a file instead of being executed. Actually it works quite simple with &lt;code&gt;echo "!!" &amp;gt;&amp;gt; ~/commands.txt&lt;/code&gt; (which appends your last command to the file &amp;#8216;commands.txt&amp;#8217; in your home directory). I still wanted an easier solution so I created the following bash alias to save me some typing and to be less distraction from the actual task I&amp;#8217;m trying to get&amp;nbsp;done:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Parobalth</title><link href="http://parobalth.github.io/" rel="alternate"></link><link href="http://parobalth.github.io/feeds/all.atom.xml" rel="self"></link><id>http://parobalth.github.io/</id><updated>2016-03-06T00:00:00+01:00</updated><entry><title>Vim: Run current line</title><link href="http://parobalth.github.io/vim-run-line" rel="alternate"></link><updated>2016-03-06T00:00:00+01:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2016-03-06:vim-run-line</id><summary type="html">&lt;p&gt;A few days ago I wrote a post how to save history commands to a file. I tinkered with my notes file and wondered how to run the current line in bash. I found multiple solutions but all replaced the current line with the output of the command. Although this can be useful it did not help me. It frustrated me that I could not find a proper solution. I don&amp;#8217;t consider myself a vim beginner anymore and somehow I felt stupid. From vimtutor I remebered &lt;code&gt;!&lt;/code&gt; to run external commands. I even looked it up in vimtutor but I could only find &lt;code&gt;:r !date&lt;/code&gt;. 
+The following example runs the current line and replaces it with the&amp;nbsp;output:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;:. !bash
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Note that the current line is represented by a dot. You can declare a range with &lt;code&gt;1,5&lt;/code&gt; (line 1 to 5) or &lt;code&gt;.,$&lt;/code&gt; (current line to end of file). You can also use a line number (e.g. &amp;#8220;:5&amp;nbsp;!bash&amp;#8221;). &lt;/p&gt;
+&lt;p&gt;Some screenshots for clarification where I&amp;#8217;m running line number&amp;nbsp;1:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="scr1" src="./images/vimscr1.png" /&gt;
+Hit &lt;code&gt;Enter&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="scr2" src="./images/vimscr2.png" /&gt;
+Line number 1 is replaced by the output of the fortune&amp;nbsp;command.&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;a class="headerlink" href="#solution" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;:.w !bash
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This &lt;a href="http://stackoverflow.com/questions/7867356/piping-buffer-to-external-command-in-vim"&gt;stackoverflow-link&lt;/a&gt; finally offered the above&amp;nbsp;solution. &lt;/p&gt;
+&lt;p&gt;Again some screenshots for&amp;nbsp;clarification:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="scr3" src="./images/vimscr3.png" /&gt;
+Hit &lt;code&gt;Enter&lt;/code&gt; to execute chosen&amp;nbsp;line:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="scr4" src="./images/vimscr4.png" /&gt;
+Hit &lt;code&gt;Enter&lt;/code&gt; to get back to your unmodified vim&amp;nbsp;buffer:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="scr5" src="./images/vimscr5.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Note that you can also use &lt;code&gt;!sh&lt;/code&gt; instead of &lt;code&gt;!bash&lt;/code&gt; to type less and that all examples also work in visual&amp;nbsp;mode. &lt;/p&gt;
+&lt;h2 id="vim-help"&gt;Vim help&lt;a class="headerlink" href="#vim-help" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Read the vim&amp;nbsp;help:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;:help w_c
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Copyheart:
+&lt;a href="http://copyheart.org"&gt;♡&lt;/a&gt;2016 by Parobalth. Copying is an act of love, please&amp;nbsp;share.&lt;/p&gt;</summary><category term="bash"></category><category term="commandline"></category><category term="vim"></category></entry><entry><title>Note your last command</title><link href="http://parobalth.github.io/ncmd" rel="alternate"></link><updated>2016-02-17T21:06:00+01:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2016-02-16:ncmd</id><summary type="html">&lt;p&gt;Some time ago I started to append neat commands I don&amp;#8217;t want to forget to a file in my home directory (e.g &lt;code&gt;echo 'foo' &amp;gt;&amp;gt; ~/commands.txt&lt;/code&gt;). So I had to navigate to a previous command with &lt;code&gt;CTRL-p&lt;/code&gt;, add &amp;#8220;echo&amp;#8221;, wrap it in singlequotes and add the path to my notes file. Quite a long process to append one command to a file. I already knew that &lt;code&gt;!!&lt;/code&gt; repeats the last command but not how to get it into a file instead of being executed. Actually it works quite simple with &lt;code&gt;echo "!!" &amp;gt;&amp;gt; ~/commands.txt&lt;/code&gt; (which appends your last command to the file &amp;#8216;commands.txt&amp;#8217; in your home directory). I still wanted an easier solution so I created the following bash alias to save me some typing and to be less distraction from the actual task I&amp;#8217;m trying to get&amp;nbsp;done:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;alias &lt;/span&gt;&lt;span class="nv"&gt;ncmd&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;echo $1 &amp;gt;&amp;gt; ~/commands.md&amp;#39;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -30,7 +62,7 @@
 
 
 &lt;p&gt;Copyheart:
-&lt;a href="http://copyheart.org"&gt;♡&lt;/a&gt;2015 by Parobalth. Copying is an act of love, please&amp;nbsp;share.&lt;/p&gt;</summary><category term="bash"></category><category term="commandline"></category><category term="notes"></category><category term="append"></category><category term="history"></category><category term="fc"></category></entry><entry><title>Holiday Testing</title><link href="http://parobalth.github.io/test-post" rel="alternate"></link><updated>2015-12-29T21:06:00+01:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2015-12-31:test-post</id><summary type="html">&lt;p&gt;Using the holidays for some testing!
+&lt;a href="http://copyheart.org"&gt;♡&lt;/a&gt;2016 by Parobalth. Copying is an act of love, please&amp;nbsp;share.&lt;/p&gt;</summary><category term="bash"></category><category term="commandline"></category><category term="notes"></category><category term="append"></category><category term="history"></category><category term="fc"></category></entry><entry><title>Holiday Testing</title><link href="http://parobalth.github.io/test-post" rel="alternate"></link><updated>2015-12-29T21:06:00+01:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2015-12-31:test-post</id><summary type="html">&lt;p&gt;Using the holidays for some testing!
 &lt;code&gt;Happy Holidays&lt;/code&gt; to all of&amp;nbsp;you!&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;def foobar():&lt;/code&gt;&lt;/p&gt;
 &lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Hello World&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;

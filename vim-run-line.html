@@ -10,18 +10,18 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="vim, clipboard, Computer, " />
+<meta name="keywords" content="bash, commandline, vim, Computer, " />
 
-<meta property="og:title" content="Vim - system clipboard "/>
-<meta property="og:url" content="http://parobalth.github.io/vim-system-clipboard" />
-<meta property="og:description" content="I finally found a solution to my vim issues with the system clipboard. I just had to install vim-gtk to make “*p and “+p work (Debian Wheezy). Stackoverflow post: http://stackoverflow.com/questions/11489428/how-to-make-vim-paste-from-and-copy-to-systems-clipboard" />
+<meta property="og:title" content="Vim: Run current line "/>
+<meta property="og:url" content="http://parobalth.github.io/vim-run-line" />
+<meta property="og:description" content="A few days ago I wrote a post how to save history commands to a file. I tinkered with my notes file and wondered how to run the current line in bash. I found multiple solutions but all replaced the current line with the output of the command. Although this ..." />
 <meta property="og:site_name" content="Parobalth" />
 <meta property="og:article:author" content="Parobalth" />
-<meta property="og:article:published_time" content="2015-09-06T17:18:00+02:00" />
-<meta name="twitter:title" content="Vim - system clipboard ">
-<meta name="twitter:description" content="I finally found a solution to my vim issues with the system clipboard. I just had to install vim-gtk to make “*p and “+p work (Debian Wheezy). Stackoverflow post: http://stackoverflow.com/questions/11489428/how-to-make-vim-paste-from-and-copy-to-systems-clipboard">
+<meta property="og:article:published_time" content="2016-03-06T00:00:00+01:00" />
+<meta name="twitter:title" content="Vim: Run current line ">
+<meta name="twitter:description" content="A few days ago I wrote a post how to save history commands to a file. I tinkered with my notes file and wondered how to run the current line in bash. I found multiple solutions but all replaced the current line with the output of the command. Although this ...">
 
-        <title>Vim - system clipboard  · Parobalth
+        <title>Vim: Run current line  · Parobalth
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
@@ -62,7 +62,7 @@
 <article>
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1><a href="http://parobalth.github.io/vim-system-clipboard"> Vim - system&nbsp;clipboard  </a></h1>
+    <h1><a href="http://parobalth.github.io/vim-run-line"> Vim: Run current&nbsp;line  </a></h1>
     </header>
 </div>
 
@@ -70,10 +70,39 @@
         <div class="span8 offset2 article-content">
 
             
-            <p>I finally found a solution to my vim issues with the system clipboard. I just had to install vim-gtk to make &#8220;*p and &#8220;+p work (Debian&nbsp;Wheezy).</p>
-<p>Stackoverflow post:
-<a class="reference external" href="http://stackoverflow.com/questions/11489428/how-to-make-vim-paste-from-and-copy-to-systems-clipboard">http://stackoverflow.com/questions/11489428/how-to-make-vim-paste-from-and-copy-to-systems-clipboard</a></p>
+            <p>A few days ago I wrote a post how to save history commands to a file. I tinkered with my notes file and wondered how to run the current line in bash. I found multiple solutions but all replaced the current line with the output of the command. Although this can be useful it did not help me. It frustrated me that I could not find a proper solution. I don&#8217;t consider myself a vim beginner anymore and somehow I felt stupid. From vimtutor I remebered <code>!</code> to run external commands. I even looked it up in vimtutor but I could only find <code>:r !date</code>. 
+The following example runs the current line and replaces it with the&nbsp;output:</p>
+<div class="highlight"><pre>:. !bash
+</pre></div>
 
+
+<p>Note that the current line is represented by a dot. You can declare a range with <code>1,5</code> (line 1 to 5) or <code>.,$</code> (current line to end of file). You can also use a line number (e.g. &#8220;:5&nbsp;!bash&#8221;). </p>
+<p>Some screenshots for clarification where I&#8217;m running line number&nbsp;1:</p>
+<p><img alt="scr1" src="./images/vimscr1.png" />
+Hit <code>Enter</code>:</p>
+<p><img alt="scr2" src="./images/vimscr2.png" />
+Line number 1 is replaced by the output of the fortune&nbsp;command.</p>
+<h2 id="solution">Solution<a class="headerlink" href="#solution" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre>:.w !bash
+</pre></div>
+
+
+<p>This <a href="http://stackoverflow.com/questions/7867356/piping-buffer-to-external-command-in-vim">stackoverflow-link</a> finally offered the above&nbsp;solution. </p>
+<p>Again some screenshots for&nbsp;clarification:</p>
+<p><img alt="scr3" src="./images/vimscr3.png" />
+Hit <code>Enter</code> to execute chosen&nbsp;line:</p>
+<p><img alt="scr4" src="./images/vimscr4.png" />
+Hit <code>Enter</code> to get back to your unmodified vim&nbsp;buffer:</p>
+<p><img alt="scr5" src="./images/vimscr5.png" /></p>
+<p>Note that you can also use <code>!sh</code> instead of <code>!bash</code> to type less and that all examples also work in visual&nbsp;mode. </p>
+<h2 id="vim-help">Vim help<a class="headerlink" href="#vim-help" title="Permanent link">&para;</a></h2>
+<p>Read the vim&nbsp;help:</p>
+<div class="highlight"><pre>:help w_c
+</pre></div>
+
+
+<p>Copyheart:
+<a href="http://copyheart.org">♡</a>2016 by Parobalth. Copying is an act of love, please&nbsp;share.</p>
             
             
             <hr/>
@@ -81,13 +110,16 @@
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
             <h4>Published</h4>
-            <time pubdate="pubdate" datetime="2015-09-06T17:18:00+02:00">Sep 6, 2015</time>
+            <time pubdate="pubdate" datetime="2016-03-06T00:00:00+01:00">Mar 6, 2016</time>
             <h4>Category</h4>
             <a class="category-link" href="http://parobalth.github.io/categories.html#computer-ref">Computer</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="http://parobalth.github.io/tags.html#clipboard-ref">clipboard
-                    <span>1</span>
+                <li><a href="http://parobalth.github.io/tags.html#bash-ref">bash
+                    <span>2</span>
+</a></li>
+                <li><a href="http://parobalth.github.io/tags.html#commandline-ref">commandline
+                    <span>2</span>
 </a></li>
                 <li><a href="http://parobalth.github.io/tags.html#vim-ref">vim
                     <span>2</span>
