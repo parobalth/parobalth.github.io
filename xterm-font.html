@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Parobalth" />
+        <meta name="copyright" content="Parobalth" />
+
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="bash, command-line, xterm, font, terminal, Computer, " />
+
+<meta property="og:title" content="Xterm - sane defaults "/>
+<meta property="og:url" content="http://parobalth.github.io/xterm-font" />
+<meta property="og:description" content="Somewhere I read a recommendation for xterm a terminal emulator for the X window system. I tried it and was surprised that it looks so ugly. I like programs with sane and usable defaults. Maybe xterm has low profile defaults because it supports very old hardware. For a modern X ..." />
+<meta property="og:site_name" content="Parobalth" />
+<meta property="og:article:author" content="Parobalth" />
+<meta property="og:article:published_time" content="2016-04-02T00:00:00+02:00" />
+<meta name="twitter:title" content="Xterm - sane defaults ">
+<meta name="twitter:description" content="Somewhere I read a recommendation for xterm a terminal emulator for the X window system. I tried it and was surprised that it looks so ugly. I like programs with sane and usable defaults. Maybe xterm has low profile defaults because it supports very old hardware. For a modern X ...">
+
+        <title>Xterm - sane defaults  · Parobalth
+</title>
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="http://parobalth.github.io/theme/css/pygments.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="http://parobalth.github.io/theme/tipuesearch/tipuesearch.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="http://parobalth.github.io/theme/css/elegant.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="http://parobalth.github.io/theme/css/custom.css" media="screen">
+        <link href="http://parobalth.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Parobalth - Full Atom Feed" />
+        <link href="http://parobalth.github.io/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Parobalth - Full RSS Feed" />
+    </head>
+    <body>
+        <div id="content-sans-footer">
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="http://parobalth.github.io/"><span class=site-name>Parobalth</span></a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right top-menu">
+                            <li ><a href="http://parobalth.github.io">Home</a></li>
+                            <li ><a href="http://parobalth.github.io/categories.html">Categories</a></li>
+                            <li ><a href="http://parobalth.github.io/tags.html">Tags</a></li>
+                            <li ><a href="http://parobalth.github.io/archives.html">Archives</a></li>
+                            <li><form class="navbar-search" action="http://parobalth.github.io/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span1"></div>
+                <div class="span10">
+<article>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+    <h1><a href="http://parobalth.github.io/xterm-font"> Xterm - sane&nbsp;defaults  </a></h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+
+            
+            <p>Somewhere I read a recommendation for <a href="http://invisible-island.net/xterm/">xterm</a> a terminal emulator for the X window system. I tried it and was surprised that it looks so ugly. I like programs with sane and usable defaults. Maybe xterm has low profile defaults because it supports very old hardware. For a modern X window system some configuration is&nbsp;necessary. </p>
+<p>Screenshot of xterm with default settings:
+<img alt="xterm-default" src="./images/xterm-default.png" /></p>
+<p>In my opinion the default font size is way to small and the font looks anachronistic. I also dislike the white font on black background. Don&#8217;t be afraid with some minor configuration improvements it&#8217;s going to look great.
+On the pro side I instantly liked about xterm that it doesn&#8217;t interfere with the shortcuts of other programs for example <a href="https://www.midnight-commander.org/">mc</a>.</p>
+<p>For general configuration read the <a href="https://wiki.archlinux.org/index.php/Xterm">ArchWiki</a> xterm article. When configuring my xterm setup I had to choose a terminal font. After some testing I chose <em>Vera Mono sans</em> a few months ago and did not regret my&nbsp;decision.</p>
+<blockquote>
+<p><span class="dquo">&#8220;</span>It is a TrueType font with full hinting instructions, which improve its rendering quality on low-resolution devices such as computer monitors. [&#8230;]
+The Bitstream Vera Sans Mono typeface in particular is suitable for technical work, as it clearly distinguishes &#8216;l&#8217; (lowercase L) from &#8216;1&#8217; (one) and &#8216;I&#8217; (uppercase i), and &#8216;0&#8217; (zero) from &#8216;O&#8217; (uppercase o).&#8221; &#8212; (Quoted from <a href="https://en.wikipedia.org/wiki/Bitstream_Vera">Wikipedia</a>)</p>
+</blockquote>
+<p>There was no need to install the font on <span class="caps">GNU</span>/Linux. It was already installed on my Debianbox.
+Copy the following lines to your ~/.Xresources file to use it as your xterm font with a reasonable font size. If you don&#8217;t already have an .Xresources file just create&nbsp;it!</p>
+<div class="highlight"><pre>URxvt.font: xft:Bitstream Vera Sans Mono:pixelsize<span class="o">=</span>15
+XTerm*faceName: Bitstream Vera Sans Mono:pixelsize<span class="o">=</span>15
+</pre></div>
+
+
+<p>Screenshot of xterm with Vera Mono sans font:
+<img alt="vera-mono" src="./images/vera-capture.png" /></p>
+<p>Much better than the default font. I prefer to use the great solarized color scheme instead of the default black and white.
+Screenshot of xterm with <a href="http://ethanschoonover.com/solarized">solarized color scheme</a>:
+<img alt="solarized" src="./images/sol-capture.png" /></p>
+<h3 id="additional-useful-links">Additional useful links:<a class="headerlink" href="#additional-useful-links" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://lukas.zapletalovi.com/2013/07/hidden-gems-of-xterm.html">https://lukas.zapletalovi.com/2013/07/hidden-gems-of-xterm.html</a></li>
+<li><a href="https://unix4lyfe.org/xterm/">https://unix4lyfe.org/xterm/</a></li>
+<li><a href="http://scarygliders.net/2011/12/01/customize-xterm-the-original-and-best-terminal/">http://scarygliders.net/2011/12/01/customize-xterm-the-original-and-best-terminal/</a></li>
+</ul>
+<h3 id="detailed-information-and-download-for-windows">Detailed information and Download for Windows:<a class="headerlink" href="#detailed-information-and-download-for-windows" title="Permanent link">&para;</a></h3>
+<p><a href="http://www.gnome.org/fonts/">http://www.gnome.org/fonts/</a></p>
+<h3 id="how-to-change-the-font-in-gvim-gui">How to change the font in gvim (gui):<a class="headerlink" href="#how-to-change-the-font-in-gvim-gui" title="Permanent link">&para;</a></h3>
+<p><a href="http://vim.wikia.com/wiki/Change_font">http://vim.wikia.com/wiki/Change_font</a></p>
+<hr />
+<p>If you have any questions, suggestions, thoughts and comments please feel free to email&nbsp;me.</p>
+<hr />
+<p>License of this bog&nbsp;post:</p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+            
+            
+            <hr/>
+        </div>
+        <section>
+        <div class="span2" style="float:right;font-size:0.9em;">
+            <h4>Published</h4>
+            <time pubdate="pubdate" datetime="2016-04-02T00:00:00+02:00">Apr 2, 2016</time>
+            <h4>Category</h4>
+            <a class="category-link" href="http://parobalth.github.io/categories.html#computer-ref">Computer</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="http://parobalth.github.io/tags.html#bash-ref">bash
+                    <span>3</span>
+</a></li>
+                <li><a href="http://parobalth.github.io/tags.html#command-line-ref">command-line
+                    <span>3</span>
+</a></li>
+                <li><a href="http://parobalth.github.io/tags.html#font-ref">font
+                    <span>1</span>
+</a></li>
+                <li><a href="http://parobalth.github.io/tags.html#terminal-ref">terminal
+                    <span>1</span>
+</a></li>
+                <li><a href="http://parobalth.github.io/tags.html#xterm-ref">xterm
+                    <span>1</span>
+</a></li>
+            </ul>
+<h4>Contact</h4>
+    <a href="mailto: parobalth@gmail.com" title="My Email Address" class="sidebar-social-links" target="_blank">
+    <i class="fa fa-envelope sidebar-social-links"></i></a>
+        </div>
+        </section>
+</div>
+</article>
+                </div>
+                <div class="span1"></div>
+            </div>
+        </div>
+        <div id="push"></div>
+    </div>
+<footer>
+<div id="footer">
+    <ul class="footer-content">
+        <li class="elegant-power">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
+    </ul>
+</div>
+</footer>            <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    
+    </body>
+    <!-- Theme: Elegant built for Pelican
+    License : http://oncrashreboot.com/pelican-elegant -->
+</html>
