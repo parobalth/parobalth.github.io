@@ -4,7 +4,7 @@
 Screenshot of xterm with default&amp;nbsp;settings&lt;/p&gt;
 &lt;p&gt;In my opinion the default font size is way to small and the font looks anachronistic. I also dislike the white font on black background. Don&amp;#8217;t be afraid with some minor configuration improvements it&amp;#8217;s going to look great.
 On the pro side I instantly liked about xterm that it doesn&amp;#8217;t interfere with the shortcuts of other programs for example &lt;a href="https://www.midnight-commander.org/"&gt;mc&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;For general configuration read the &lt;a href="https://wiki.archlinux.org/index.php/Xterm"&gt;ArchWiki&lt;/a&gt; xterm article. When configuring my xterm setup I had to choose a terminal font. After some testing I chose &lt;em&gt;Vera Mono sans&lt;/em&gt; a few months ago and did not regret my&amp;nbsp;decision.&lt;/p&gt;
+&lt;p&gt;For general configuration read the &lt;a href="https://wiki.archlinux.org/index.php/Xterm"&gt;ArchWiki&lt;/a&gt; xterm article. When configuring my xterm setup I had to choose a terminal font. After some testing I chose &lt;em&gt;Vera Sans Mono&lt;/em&gt; a few months ago and did not regret my&amp;nbsp;decision.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;It is a TrueType font with full hinting instructions, which improve its rendering quality on low-resolution devices such as computer monitors. [&amp;#8230;]
 The Bitstream Vera Sans Mono typeface in particular is suitable for technical work, as it clearly distinguishes &amp;#8216;l&amp;#8217; (lowercase L) from &amp;#8216;1&amp;#8217; (one) and &amp;#8216;I&amp;#8217; (uppercase i), and &amp;#8216;0&amp;#8217; (zero) from &amp;#8216;O&amp;#8217; (uppercase o).&amp;#8221; &amp;#8212; (Quoted from &lt;a href="https://en.wikipedia.org/wiki/Bitstream_Vera"&gt;Wikipedia&lt;/a&gt;)&lt;/p&gt;
@@ -17,7 +17,7 @@ XTerm*faceName: Bitstream Vera Sans Mono:pixelsize&lt;span class="o"&gt;=&lt;/sp
 
 
 &lt;p&gt;&lt;img alt="vera-mono" src="./images/vera-capture.png" /&gt;
-Screenshot of xterm with Vera Mono sans&amp;nbsp;font&lt;/p&gt;
+Screenshot of xterm with Vera Sans Mono&amp;nbsp;font&lt;/p&gt;
 &lt;p&gt;Much better than the default font. I prefer to use the great solarized color scheme instead of the default black and&amp;nbsp;white.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="solarized" src="./images/sol-capture.png" /&gt;
 Screenshot of xterm with &lt;a href="http://ethanschoonover.com/solarized"&gt;solarized color&amp;nbsp;scheme&lt;/a&gt;&lt;/p&gt;
