@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Parobalth</title><link href="http://parobalth.github.io/" rel="alternate"></link><link href="http://parobalth.github.io/feeds/all.atom.xml" rel="self"></link><id>http://parobalth.github.io/</id><updated>2016-04-03T00:00:00+02:00</updated><entry><title>Xterm - sane defaults?</title><link href="http://parobalth.github.io/xterm-font" rel="alternate"></link><updated>2016-04-03T00:00:00+02:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2016-04-02:xterm-font</id><summary type="html">&lt;p&gt;Somewhere I read a recommendation for &lt;a href="http://invisible-island.net/xterm/"&gt;xterm&lt;/a&gt; a terminal emulator for the X window system. I tried it and was surprised that it looks so ugly. I like programs with sane and usable defaults. Maybe xterm has low profile defaults because it supports very old hardware. For a modern X window system some configuration is&amp;nbsp;necessary. &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Parobalth</title><link href="http://parobalth.github.io/" rel="alternate"></link><link href="http://parobalth.github.io/feeds/all.atom.xml" rel="self"></link><id>http://parobalth.github.io/</id><updated>2016-06-18T00:00:00+02:00</updated><entry><title>Firefox-esr in Debian Jessie</title><link href="http://parobalth.github.io/debian-firefox-esr" rel="alternate"></link><updated>2016-06-18T00:00:00+02:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2016-06-18:debian-firefox-esr</id><summary type="html">&lt;h2 id="firefox-esr"&gt;Firefox-esr&lt;a class="headerlink" href="#firefox-esr" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;During the latest update of the stable branch of Debian (Jessie) I noticed the selected package &amp;#8216;firefox-esr&amp;#8217;. After installing the update I got the following&amp;nbsp;message:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The iceweasel package was replaced with the firefox-esr&amp;nbsp;package.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Preferences under /etc/iceweasel/prefs will need to be copied manually
+   to&amp;nbsp;/etc/firefox-esr.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;Other customizations under /etc/iceweasel will need additional manual
+   steps, through &lt;span class="caps"&gt;CCK2&lt;/span&gt; or&amp;nbsp;addons.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&amp;#8212; Mike Hommey &lt;a href="&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#116;&amp;#111;&amp;#58;&amp;#103;&amp;#108;&amp;#97;&amp;#110;&amp;#100;&amp;#105;&amp;#117;&amp;#109;&amp;#64;&amp;#100;&amp;#101;&amp;#98;&amp;#105;&amp;#97;&amp;#110;&amp;#46;&amp;#111;&amp;#114;&amp;#103;"&gt;&amp;#103;&amp;#108;&amp;#97;&amp;#110;&amp;#100;&amp;#105;&amp;#117;&amp;#109;&amp;#64;&amp;#100;&amp;#101;&amp;#98;&amp;#105;&amp;#97;&amp;#110;&amp;#46;&amp;#111;&amp;#114;&amp;#103;&lt;/a&gt;  Mon, 7 Mar 2016 07:45:02&amp;nbsp;+0900&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Ok, this message took me by surprise. After using Debian and Iceweasel for several years I wondered what happened to the iceweasel&amp;nbsp;package?&lt;/p&gt;
+&lt;p&gt;A quick google search told me that the Debian project finally switched back to Firefox.
+Mike Hommey, maintainer of the Iceweasel package wrote about the change on his &lt;a href="https://glandium.org/blog/?p=3622"&gt;blog&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Other interesting links on this&amp;nbsp;topic: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://wiki.debian.org/Iceweasel"&gt;https://wiki.debian.org/Iceweasel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://lwn.net/Articles/676799/"&gt;https://lwn.net/Articles/676799/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=815006"&gt;https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=815006&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;If you have any questions, suggestions, thoughts and comments please feel free to email&amp;nbsp;me.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;License of this blog&amp;nbsp;post:&lt;/p&gt;
+&lt;p&gt;&lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;&lt;img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /&gt;&lt;/a&gt;&lt;br /&gt;This work is licensed under a &lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;.&lt;/p&gt;</summary><category term="debian"></category><category term="iceweasel"></category><category term="firefox-esr"></category></entry><entry><title>Xterm - sane defaults?</title><link href="http://parobalth.github.io/xterm-font" rel="alternate"></link><updated>2016-04-03T00:00:00+02:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2016-04-02:xterm-font</id><summary type="html">&lt;p&gt;Somewhere I read a recommendation for &lt;a href="http://invisible-island.net/xterm/"&gt;xterm&lt;/a&gt; a terminal emulator for the X window system. I tried it and was surprised that it looks so ugly. I like programs with sane and usable defaults. Maybe xterm has low profile defaults because it supports very old hardware. For a modern X window system some configuration is&amp;nbsp;necessary. &lt;/p&gt;
 &lt;p&gt;&lt;img alt="xterm-default" src="./images/xterm-default.png" /&gt;
 Screenshot of xterm with default&amp;nbsp;settings&lt;/p&gt;
 &lt;p&gt;In my opinion the default font size is way to small and the font looks anachronistic. I also dislike the white font on black background. Don&amp;#8217;t be afraid with some minor configuration improvements it&amp;#8217;s going to look great.
