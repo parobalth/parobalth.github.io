@@ -1,5 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Parobalth</title><link>http://parobalth.github.io/</link><description></description><atom:link href="http://parobalth.github.io/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 17 Jul 2016 00:00:00 +0200</lastBuildDate><item><title>VimFx instead of Pentadactyl</title><link>http://parobalth.github.io/vim-fx</link><description>&lt;h2 id="introduction"&gt;Introduction&lt;a class="headerlink" href="#introduction" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Parobalth</title><link>http://parobalth.github.io/</link><description></description><atom:link href="http://parobalth.github.io/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 26 Jul 2016 00:00:00 +0200</lastBuildDate><item><title>Gif screencast</title><link>http://parobalth.github.io/gif-screencast</link><description>&lt;h2 id="problem-and-introduction"&gt;Problem and Introduction&lt;a class="headerlink" href="#problem-and-introduction" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I wanted to include some gif screencasts in my posts and started looking for a neat solution. I can live with a command line or gui solution as long as it works reasonable well and is in the Debian Jessie (stable)&amp;nbsp;repositories.&lt;/p&gt;
+&lt;h2 id="interesting-links"&gt;Interesting Links&lt;a class="headerlink" href="#interesting-links" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://scottlinux.com/2011/07/31/create-animated-gif-in-linux-from-command-line/"&gt;https://scottlinux.com/2011/07/31/create-animated-gif-in-linux-from-command-line/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://askubuntu.com/questions/107726/how-to-create-animated-gif-images-of-a-screencast#107735"&gt;http://askubuntu.com/questions/107726/how-to-create-animated-gif-images-of-a-screencast#107735&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://recordmydesktop.sourceforge.net/rug/app_a.php"&gt;http://recordmydesktop.sourceforge.net/rug/app_a.php&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://davidwalsh.name/convert-video-gif"&gt;https://davidwalsh.name/convert-video-gif&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.imagemagick.org/Usage/video/"&gt;http://www.imagemagick.org/Usage/video/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.linux.org/threads/animated-screen-capture-with-byzanz.7715/"&gt;http://www.linux.org/threads/animated-screen-capture-with-byzanz.7715/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="solutions"&gt;Solutions&lt;a class="headerlink" href="#solutions" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;From the links above I managed to extract two different solutions:
+&lt;code&gt;byzanz&lt;/code&gt; - &lt;a href="https://packages.debian.org/jessie/byzanz"&gt;Debian package &amp;#8216;byzanz&amp;#8217;&lt;/a&gt;. This is the easiest and best solution I could find. Set the duration of the recording with the &lt;code&gt;-d&lt;/code&gt; option. Replace &amp;#8216;foo.gif&amp;#8217; with your preferred&amp;nbsp;filename:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;byzanz-record -d &lt;span class="m"&gt;20&lt;/span&gt; foo.gif
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;or &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;record a video with &amp;#8216;recordmydesktop&amp;#8217; (see code example 0), &amp;#8216;gtk-recordmydesktop&amp;#8217; or use an existing&amp;nbsp;video&lt;/li&gt;
+&lt;li&gt;With &amp;#8216;avconv&amp;#8217; you can directly convert to gif (see code example 1) and skip step 3. Another aproach is to extract stillimages with &amp;#8216;mplayer&amp;#8217; (see code example 2) or with &amp;#8216;avconv&amp;#8217; (see code example&amp;nbsp;3).  &lt;/li&gt;
+&lt;li&gt;convert to &amp;#8216;gif&amp;#8217; with imagemagick (see code example&amp;nbsp;4)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Code example 0 (record a video; replace foobar.ogv with your&amp;nbsp;filename):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;recordmydesktop -o foobar.ogv
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Code example 1 (direct video to gif conversion; replace foobar.ogv with your&amp;nbsp;filename):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;avconv -i foobar.ogv -pix_fmt rgb24 foobar.gif
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Code example 2 (extraction of still images; replace foobar.ogv with your&amp;nbsp;filename):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;mplayer -ao null foobar.ogv -vo jpeg:outdir&lt;span class="o"&gt;=&lt;/span&gt;output
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Code example 3 (extraction of still images; replace foobar.ogv with your&amp;nbsp;filename):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;avconv -i foobar.ogv -r &lt;span class="m"&gt;15&lt;/span&gt; output/image-%3d.png
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Code example 4 (convert stillimages to&amp;nbsp;gif):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;convert output/* -layers Optimize output.gif
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This solution produces usable gifs with small filesizes. The still image extraction and conversion to gif takes a lot of&amp;nbsp;computing.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;If you have any questions, suggestions, thoughts and comments please feel free to email&amp;nbsp;me.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;License of this blog&amp;nbsp;post:&lt;/p&gt;
+&lt;p&gt;&lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;&lt;img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /&gt;&lt;/a&gt;&lt;br /&gt;This work is licensed under a &lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Parobalth</dc:creator><pubDate>Tue, 26 Jul 2016 00:00:00 +0200</pubDate><guid>tag:parobalth.github.io,2016-07-26:gif-screencast</guid><category>gif</category><category>debian</category><category>screencast</category></item><item><title>VimFx instead of Pentadactyl</title><link>http://parobalth.github.io/vim-fx</link><description>&lt;h2 id="introduction"&gt;Introduction&lt;a class="headerlink" href="#introduction" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Vim is my main editor. I love programms with vim key bindings. There are several firefox plugins with vim key bindings (&lt;a href="http://vim.wikia.com/wiki/Vim_key_bindings_for_web_browsers"&gt;read&lt;/a&gt;). I initially started with Vimperator then switched to &lt;a href="http://5digits.org/pentadactyl/"&gt;Pentadactyl&lt;/a&gt; and it was&amp;nbsp;great.&lt;/p&gt;
 &lt;h2 id="problem"&gt;Problem&lt;a class="headerlink" href="#problem" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;With the recent &lt;a href="debian-firefox-esr.html"&gt;switch from iceweasel to firefox-esr&lt;/a&gt; in Debian stable (Jessie) Pentadactyl stopped working because all plugins need a valid mozilla signature. There is a rather long &lt;a href="https://github.com/5digits/dactyl/issues/79"&gt;thread&lt;/a&gt; at Pentadactyls issue tracker with some&amp;nbsp;explanations.  &lt;/p&gt;
