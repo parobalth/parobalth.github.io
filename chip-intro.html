@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Parobalth" />
+        <meta name="copyright" content="Parobalth" />
+
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="c.h.i.p., debian, nextthing, usb-serial, ssh, draft, Computer, " />
+
+<meta property="og:title" content="NextThing C.h.i.p. "/>
+<meta property="og:url" content="http://parobalth.github.io/chip-intro" />
+<meta property="og:description" content="Warning: This is a quick&amp;dirty post about the first steps to connect NextThing C.h.i.p via USB serial on a Debian Jessie machine. Consider it as a first draft — I am going to modify this post in the next few days, add some pictures and correct typos ..." />
+<meta property="og:site_name" content="Parobalth" />
+<meta property="og:article:author" content="Parobalth" />
+<meta property="og:article:published_time" content="2016-07-29T00:00:00+02:00" />
+<meta name="twitter:title" content="NextThing C.h.i.p. ">
+<meta name="twitter:description" content="Warning: This is a quick&amp;dirty post about the first steps to connect NextThing C.h.i.p via USB serial on a Debian Jessie machine. Consider it as a first draft — I am going to modify this post in the next few days, add some pictures and correct typos ...">
+
+        <title>NextThing C.h.i.p.  · Parobalth
+</title>
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="http://parobalth.github.io/theme/css/pygments.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="http://parobalth.github.io/theme/tipuesearch/tipuesearch.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="http://parobalth.github.io/theme/css/elegant.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="http://parobalth.github.io/theme/css/custom.css" media="screen">
+        <link href="http://parobalth.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Parobalth - Full Atom Feed" />
+        <link href="http://parobalth.github.io/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Parobalth - Full RSS Feed" />
+    </head>
+    <body>
+        <div id="content-sans-footer">
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="http://parobalth.github.io/"><span class=site-name>Parobalth</span></a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right top-menu">
+                            <li ><a href="http://parobalth.github.io">Home</a></li>
+                            <li ><a href="http://parobalth.github.io/categories.html">Categories</a></li>
+                            <li ><a href="http://parobalth.github.io/tags.html">Tags</a></li>
+                            <li ><a href="http://parobalth.github.io/archives.html">Archives</a></li>
+                            <li><form class="navbar-search" action="http://parobalth.github.io/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span1"></div>
+                <div class="span10">
+<article>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+    <h1><a href="http://parobalth.github.io/chip-intro"> NextThing&nbsp;C.h.i.p.  </a></h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+
+            
+            <p>Warning: This is a quick&amp;dirty post about the first steps to connect NextThing C.h.i.p via <span class="caps">USB</span> serial on a Debian Jessie machine. Consider it as a first draft &#8212; I am going to modify this post in the next few days, add some pictures and correct&nbsp;typos.</p>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>I recieved my NextThing C.h.i.p. this week!
+It is a 9$ computer and comes already flashed with the C.h.i.p. <span class="caps">OS</span> based on Debian.
+I took some notes during my first steps with&nbsp;chip:</p>
+<p>This is the <a href="http://docs.getchip.com/chip.html#introduction">official Documentation</a>.</p>
+<h2 id="headless-via-usb">Headless via <span class="caps">USB</span><a class="headerlink" href="#headless-via-usb" title="Permanent link">&para;</a></h2>
+<p>I used <a href="http://docs.getchip.com/chip.html#headless-chip">this part</a> of the official documentation as a starting point.
+I like headless ssh-connections but you can&#8217;t reach your chip because wifi is not yet configured with your network.
+I used a <span class="caps">USB</span> serial connection. Note that I use <em>Debian Jessie</em> (stable).<br />
+Connect your Chip with a standard <span class="caps">USB</span>-to-usb-micro-cable to the usb-port of your Computer/Laptop and&nbsp;run:</p>
+<div class="highlight"><pre>dmesg -w
+</pre></div>
+
+
+<p>Output will be similar&nbsp;to:</p>
+<div class="highlight"><pre>usb 1-2: New USB device found, idVendor=0525, idProduct=a4a7
+usb 1-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-2: Product: Gadget Serial v2.4
+usb 1-2: Manufacturer: Linux 4.3.0-ntc with musb-hdrc
+cdc_acm 1-2:2.0: This device cannot do calls on its own. It is not a modem.
+cdc_acm 1-2:2.0: ttyACM0: USB ACM device
+</pre></div>
+
+
+<p>So your Chip is recognized as &#8216;<em>ttyACM0</em>&#8216;.
+I had some permission problems and had to connect&nbsp;with</p>
+<div class="highlight"><pre>sudo screen /dev/ttyACM0
+</pre></div>
+
+
+<p>Login as <code>root</code> with password <code>chip</code>.</p>
+<p>set up a wifi connection with&nbsp;nmtui:</p>
+<div class="highlight"><pre>nmtui
+</pre></div>
+
+
+<p>Now you can ssh into chip but you may want to change the root password (<code>passwd</code>) first, create a normal user (<code>adduser foo</code>) and forbid root login via ssh (change settings in /etc/ssh/sshd_config). Add your user &#8216;foo&#8217; to the sudo group with &#8216;<code>adduser foo sudo</code><span class="quo">&#8216;</span></p>
+<p>Now you can ssh to your chip with (replace &#8216;foo&#8217; with your username and &#8216;xxx.xxx.x.x&#8217; with the <span class="caps">IP</span> adress of&nbsp;chip):</p>
+<div class="highlight"><pre>ssh foo@xxx.xxx.x.x
+</pre></div>
+
+
+<p>Let us have a look at the&nbsp;sources.list:</p>
+<div class="highlight"><pre><span class="k">deb</span> <span class="s">http://ftp.us.debian.org/debian/</span> <span class="kp">jessie</span> <span class="kp">main</span> <span class="kp">contrib</span> <span class="kp">non-free</span>
+<span class="k">deb-src</span> <span class="s">http://ftp.us.debian.org/debian/</span> <span class="kp">jessie</span> <span class="kp">main</span> <span class="kp">contrib</span> <span class="kp">non-free</span>
+
+<span class="k">deb</span> <span class="s">http://security.debian.org/</span> <span class="kp">jessie/updates</span> <span class="kp">main</span> <span class="kp">contrib</span> <span class="kp">non-free</span>
+<span class="k">deb-src</span> <span class="s">http://security.debian.org/</span> <span class="kp">jessie/updates</span> <span class="kp">main</span> <span class="kp">contrib</span> <span class="kp">non-free</span>
+
+<span class="k">deb</span> <span class="s">http://http.debian.net/debian</span> <span class="kp">jessie-backports</span> <span class="kp">main</span> <span class="kp">contrib</span> <span class="kp">non-free</span>
+<span class="k">deb-src</span> <span class="s">http://http.debian.net/debian</span> <span class="kp">jessie-backports</span> <span class="kp">main</span> <span class="kp">contrib</span> <span class="kp">non-free</span>
+
+<span class="k">deb</span> <span class="s">http://opensource.nextthing.co/chip/debian/repo</span> <span class="kp">jessie</span> <span class="kp">main</span>
+</pre></div>
+
+
+<p>Looks pretty sane to me. Just standard debian stable repositories and one additional NextThing repository (probably for a custom kernel). Output of &#8216;<code>uname -r</code><span class="quo">&#8216;</span> is <em>4.3.0-ntc</em>.</p>
+<p>Now let&#8217;s install aptitude and additional programs (I like&nbsp;aptitude):</p>
+<div class="highlight"><pre>apt-get update
+apt-get install aptitude
+</pre></div>
+
+
+<p>Now you can install additional packages with aptitude (vim, mc, xterm, htop, screen, cmus,&nbsp;&#8230;)</p>
+<hr />
+<p>If you have any questions, suggestions, thoughts and comments please feel free to email&nbsp;me.</p>
+<hr />
+<p>License of this blog&nbsp;post:</p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+            
+            
+            <hr/>
+        </div>
+        <section>
+        <div class="span2" style="float:right;font-size:0.9em;">
+            <h4>Published</h4>
+            <time pubdate="pubdate" datetime="2016-07-29T00:00:00+02:00">Jul 29, 2016</time>
+            <h4>Category</h4>
+            <a class="category-link" href="http://parobalth.github.io/categories.html#computer-ref">Computer</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="http://parobalth.github.io/tags.html#chip-ref">c.h.i.p.
+                    <span>1</span>
+</a></li>
+                <li><a href="http://parobalth.github.io/tags.html#debian-ref">debian
+                    <span>3</span>
+</a></li>
+                <li><a href="http://parobalth.github.io/tags.html#draft-ref">draft
+                    <span>1</span>
+</a></li>
+                <li><a href="http://parobalth.github.io/tags.html#nextthing-ref">nextthing
+                    <span>1</span>
+</a></li>
+                <li><a href="http://parobalth.github.io/tags.html#ssh-ref">ssh
+                    <span>1</span>
+</a></li>
+                <li><a href="http://parobalth.github.io/tags.html#usb-serial-ref">usb-serial
+                    <span>1</span>
+</a></li>
+            </ul>
+<h4>Contact</h4>
+    <a href="mailto: parobalth@gmail.com" title="My Email Address" class="sidebar-social-links" target="_blank">
+    <i class="fa fa-envelope sidebar-social-links"></i></a>
+        </div>
+        </section>
+</div>
+</article>
+                </div>
+                <div class="span1"></div>
+            </div>
+        </div>
+        <div id="push"></div>
+    </div>
+<footer>
+<div id="footer">
+    <ul class="footer-content">
+        <li class="elegant-power">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
+    </ul>
+</div>
+</footer>            <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    
+    </body>
+    <!-- Theme: Elegant built for Pelican
+    License : http://oncrashreboot.com/pelican-elegant -->
+</html>

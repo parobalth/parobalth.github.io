@@ -1,5 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Parobalth</title><link href="http://parobalth.github.io/" rel="alternate"></link><link href="http://parobalth.github.io/feeds/all.atom.xml" rel="self"></link><id>http://parobalth.github.io/</id><updated>2016-07-26T00:00:00+02:00</updated><entry><title>Gif screencast</title><link href="http://parobalth.github.io/gif-screencast" rel="alternate"></link><updated>2016-07-26T00:00:00+02:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2016-07-26:gif-screencast</id><summary type="html">&lt;h2 id="problem-and-introduction"&gt;Problem and Introduction&lt;a class="headerlink" href="#problem-and-introduction" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Parobalth</title><link href="http://parobalth.github.io/" rel="alternate"></link><link href="http://parobalth.github.io/feeds/all.atom.xml" rel="self"></link><id>http://parobalth.github.io/</id><updated>2016-07-29T00:00:00+02:00</updated><entry><title>NextThing C.h.i.p.</title><link href="http://parobalth.github.io/chip-intro" rel="alternate"></link><updated>2016-07-29T00:00:00+02:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2016-07-29:chip-intro</id><summary type="html">&lt;p&gt;Warning: This is a quick&amp;amp;dirty post about the first steps to connect NextThing C.h.i.p via &lt;span class="caps"&gt;USB&lt;/span&gt; serial on a Debian Jessie machine. Consider it as a first draft &amp;#8212; I am going to modify this post in the next few days, add some pictures and correct&amp;nbsp;typos.&lt;/p&gt;
+&lt;h2 id="introduction"&gt;Introduction&lt;a class="headerlink" href="#introduction" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I recieved my NextThing C.h.i.p. this week!
+It is a 9$ computer and comes already flashed with the C.h.i.p. &lt;span class="caps"&gt;OS&lt;/span&gt; based on Debian.
+I took some notes during my first steps with&amp;nbsp;chip:&lt;/p&gt;
+&lt;p&gt;This is the &lt;a href="http://docs.getchip.com/chip.html#introduction"&gt;official Documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="headless-via-usb"&gt;Headless via &lt;span class="caps"&gt;USB&lt;/span&gt;&lt;a class="headerlink" href="#headless-via-usb" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I used &lt;a href="http://docs.getchip.com/chip.html#headless-chip"&gt;this part&lt;/a&gt; of the official documentation as a starting point.
+I like headless ssh-connections but you can&amp;#8217;t reach your chip because wifi is not yet configured with your network.
+I used a &lt;span class="caps"&gt;USB&lt;/span&gt; serial connection. Note that I use &lt;em&gt;Debian Jessie&lt;/em&gt; (stable).&lt;br /&gt;
+Connect your Chip with a standard &lt;span class="caps"&gt;USB&lt;/span&gt;-to-usb-micro-cable to the usb-port of your Computer/Laptop and&amp;nbsp;run:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;dmesg -w
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Output will be similar&amp;nbsp;to:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;usb 1-2: New USB device found, idVendor=0525, idProduct=a4a7
+usb 1-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-2: Product: Gadget Serial v2.4
+usb 1-2: Manufacturer: Linux 4.3.0-ntc with musb-hdrc
+cdc_acm 1-2:2.0: This device cannot do calls on its own. It is not a modem.
+cdc_acm 1-2:2.0: ttyACM0: USB ACM device
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;So your Chip is recognized as &amp;#8216;&lt;em&gt;ttyACM0&lt;/em&gt;&amp;#8216;.
+I had some permission problems and had to connect&amp;nbsp;with&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo screen /dev/ttyACM0
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Login as &lt;code&gt;root&lt;/code&gt; with password &lt;code&gt;chip&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;set up a wifi connection with&amp;nbsp;nmtui:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;nmtui
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now you can ssh into chip but you may want to change the root password (&lt;code&gt;passwd&lt;/code&gt;) first, create a normal user (&lt;code&gt;adduser foo&lt;/code&gt;) and forbid root login via ssh (change settings in /etc/ssh/sshd_config). Add your user &amp;#8216;foo&amp;#8217; to the sudo group with &amp;#8216;&lt;code&gt;adduser foo sudo&lt;/code&gt;&lt;span class="quo"&gt;&amp;#8216;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Now you can ssh to your chip with (replace &amp;#8216;foo&amp;#8217; with your username and &amp;#8216;xxx.xxx.x.x&amp;#8217; with the &lt;span class="caps"&gt;IP&lt;/span&gt; adress of&amp;nbsp;chip):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;ssh foo@xxx.xxx.x.x
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Let us have a look at the&amp;nbsp;sources.list:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;http://ftp.us.debian.org/debian/&lt;/span&gt; &lt;span class="kp"&gt;jessie&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;contrib&lt;/span&gt; &lt;span class="kp"&gt;non-free&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;http://ftp.us.debian.org/debian/&lt;/span&gt; &lt;span class="kp"&gt;jessie&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;contrib&lt;/span&gt; &lt;span class="kp"&gt;non-free&lt;/span&gt;
+
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;http://security.debian.org/&lt;/span&gt; &lt;span class="kp"&gt;jessie/updates&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;contrib&lt;/span&gt; &lt;span class="kp"&gt;non-free&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;http://security.debian.org/&lt;/span&gt; &lt;span class="kp"&gt;jessie/updates&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;contrib&lt;/span&gt; &lt;span class="kp"&gt;non-free&lt;/span&gt;
+
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;http://http.debian.net/debian&lt;/span&gt; &lt;span class="kp"&gt;jessie-backports&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;contrib&lt;/span&gt; &lt;span class="kp"&gt;non-free&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;http://http.debian.net/debian&lt;/span&gt; &lt;span class="kp"&gt;jessie-backports&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;contrib&lt;/span&gt; &lt;span class="kp"&gt;non-free&lt;/span&gt;
+
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;http://opensource.nextthing.co/chip/debian/repo&lt;/span&gt; &lt;span class="kp"&gt;jessie&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Looks pretty sane to me. Just standard debian stable repositories and one additional NextThing repository (probably for a custom kernel). Output of &amp;#8216;&lt;code&gt;uname -r&lt;/code&gt;&lt;span class="quo"&gt;&amp;#8216;&lt;/span&gt; is &lt;em&gt;4.3.0-ntc&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Now let&amp;#8217;s install aptitude and additional programs (I like&amp;nbsp;aptitude):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;apt-get update
+apt-get install aptitude
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now you can install additional packages with aptitude (vim, mc, xterm, htop, screen, cmus,&amp;nbsp;&amp;#8230;)&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;If you have any questions, suggestions, thoughts and comments please feel free to email&amp;nbsp;me.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;License of this blog&amp;nbsp;post:&lt;/p&gt;
+&lt;p&gt;&lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;&lt;img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /&gt;&lt;/a&gt;&lt;br /&gt;This work is licensed under a &lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;.&lt;/p&gt;</summary><category term="c.h.i.p."></category><category term="debian"></category><category term="nextthing"></category><category term="usb-serial"></category><category term="ssh"></category><category term="draft"></category></entry><entry><title>Gif screencast</title><link href="http://parobalth.github.io/gif-screencast" rel="alternate"></link><updated>2016-07-26T00:00:00+02:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2016-07-26:gif-screencast</id><summary type="html">&lt;h2 id="problem-and-introduction"&gt;Problem and Introduction&lt;a class="headerlink" href="#problem-and-introduction" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;I wanted to include some gif screencasts in my posts and started looking for a neat solution. I can live with a command line or gui solution as long as it works reasonable well and is in the Debian Jessie (stable)&amp;nbsp;repositories.&lt;/p&gt;
 &lt;h2 id="interesting-links"&gt;Interesting Links&lt;a class="headerlink" href="#interesting-links" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
