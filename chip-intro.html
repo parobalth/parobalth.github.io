@@ -14,12 +14,13 @@
 
 <meta property="og:title" content="NextThing C.h.i.p. "/>
 <meta property="og:url" content="http://parobalth.github.io/chip-intro" />
-<meta property="og:description" content="Warning: This is a quick&amp;dirty post about the first steps to connect NextThing C.h.i.p via USB serial on a Debian Jessie machine. Consider it as a first draft — I am going to modify this post in the next few days, add some pictures and correct typos ..." />
+<meta property="og:description" content="Warning — work in progress: This is a quick&amp;dirty post about the first steps to connect NextThing C.h.i.p via USB serial on a Debian Jessie machine. Consider it as a first draft — I am going to modify this post in the next few days and correct typos ..." />
 <meta property="og:site_name" content="Parobalth" />
 <meta property="og:article:author" content="Parobalth" />
 <meta property="og:article:published_time" content="2016-07-29T00:00:00+02:00" />
+<meta property="" content="2016-07-30T00:00:00+02:00" />
 <meta name="twitter:title" content="NextThing C.h.i.p. ">
-<meta name="twitter:description" content="Warning: This is a quick&amp;dirty post about the first steps to connect NextThing C.h.i.p via USB serial on a Debian Jessie machine. Consider it as a first draft — I am going to modify this post in the next few days, add some pictures and correct typos ...">
+<meta name="twitter:description" content="Warning — work in progress: This is a quick&amp;dirty post about the first steps to connect NextThing C.h.i.p via USB serial on a Debian Jessie machine. Consider it as a first draft — I am going to modify this post in the next few days and correct typos ...">
 
         <title>NextThing C.h.i.p.  · Parobalth
 </title>
@@ -70,7 +71,8 @@
         <div class="span8 offset2 article-content">
 
             
-            <p>Warning: This is a quick&amp;dirty post about the first steps to connect NextThing C.h.i.p via <span class="caps">USB</span> serial on a Debian Jessie machine. Consider it as a first draft &#8212; I am going to modify this post in the next few days, add some pictures and correct&nbsp;typos.</p>
+            <p><img alt="chip_small" src="./images/Chip1small.jpg" /></p>
+<p>Warning &#8212; work in progress: This is a quick&amp;dirty post about the first steps to connect NextThing C.h.i.p via <span class="caps">USB</span> serial on a Debian Jessie machine. Consider it as a first draft &#8212; I am going to modify this post in the next few days and correct&nbsp;typos.</p>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>I recieved my NextThing C.h.i.p. this week!
 It is a 9$ computer and comes already flashed with the C.h.i.p. <span class="caps">OS</span> based on Debian.
@@ -127,7 +129,7 @@ I had some permission problems and had to connect&nbsp;with</p>
 </pre></div>
 
 
-<p>Looks pretty sane to me. Just standard debian stable repositories and one additional NextThing repository (probably for a custom kernel). Output of &#8216;<code>uname -r</code><span class="quo">&#8216;</span> is <em>4.3.0-ntc</em>.</p>
+<p>Looks pretty sane to me. Just standard debian stable repositories and one additional NextThing repository (probably for a custom kernel). Output of &#8216;<code>uname -r</code><span class="quo">&#8216;</span> is <em>4.3.0-ntc</em>. I have to admit that I am not entirely shure about &#8216;http.debian.net/debian&#8217; (jessie-backports). I think that I am going to change that&nbsp;line.</p>
 <p>Now let&#8217;s install aptitude and additional programs (I like&nbsp;aptitude):</p>
 <div class="highlight"><pre>apt-get update
 apt-get install aptitude
@@ -148,6 +150,10 @@ apt-get install aptitude
         <div class="span2" style="float:right;font-size:0.9em;">
             <h4>Published</h4>
             <time pubdate="pubdate" datetime="2016-07-29T00:00:00+02:00">Jul 29, 2016</time>
+
+<h4>Last Updated</h4>
+<time datetime="2016-07-30T00:00:00+02:00">Jul 30, 2016</time>
+
             <h4>Category</h4>
             <a class="category-link" href="http://parobalth.github.io/categories.html#computer-ref">Computer</a>
             <h4>Tags</h4>

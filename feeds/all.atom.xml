@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Parobalth</title><link href="http://parobalth.github.io/" rel="alternate"></link><link href="http://parobalth.github.io/feeds/all.atom.xml" rel="self"></link><id>http://parobalth.github.io/</id><updated>2016-07-29T00:00:00+02:00</updated><entry><title>NextThing C.h.i.p.</title><link href="http://parobalth.github.io/chip-intro" rel="alternate"></link><updated>2016-07-29T00:00:00+02:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2016-07-29:chip-intro</id><summary type="html">&lt;p&gt;Warning: This is a quick&amp;amp;dirty post about the first steps to connect NextThing C.h.i.p via &lt;span class="caps"&gt;USB&lt;/span&gt; serial on a Debian Jessie machine. Consider it as a first draft &amp;#8212; I am going to modify this post in the next few days, add some pictures and correct&amp;nbsp;typos.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Parobalth</title><link href="http://parobalth.github.io/" rel="alternate"></link><link href="http://parobalth.github.io/feeds/all.atom.xml" rel="self"></link><id>http://parobalth.github.io/</id><updated>2016-07-30T00:00:00+02:00</updated><entry><title>NextThing C.h.i.p.</title><link href="http://parobalth.github.io/chip-intro" rel="alternate"></link><updated>2016-07-30T00:00:00+02:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2016-07-29:chip-intro</id><summary type="html">&lt;p&gt;&lt;img alt="chip_small" src="./images/Chip1small.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Warning &amp;#8212; work in progress: This is a quick&amp;amp;dirty post about the first steps to connect NextThing C.h.i.p via &lt;span class="caps"&gt;USB&lt;/span&gt; serial on a Debian Jessie machine. Consider it as a first draft &amp;#8212; I am going to modify this post in the next few days and correct&amp;nbsp;typos.&lt;/p&gt;
 &lt;h2 id="introduction"&gt;Introduction&lt;a class="headerlink" href="#introduction" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;I recieved my NextThing C.h.i.p. this week!
 It is a 9$ computer and comes already flashed with the C.h.i.p. &lt;span class="caps"&gt;OS&lt;/span&gt; based on Debian.
@@ -56,7 +57,7 @@ I had some permission problems and had to connect&amp;nbsp;with&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Looks pretty sane to me. Just standard debian stable repositories and one additional NextThing repository (probably for a custom kernel). Output of &amp;#8216;&lt;code&gt;uname -r&lt;/code&gt;&lt;span class="quo"&gt;&amp;#8216;&lt;/span&gt; is &lt;em&gt;4.3.0-ntc&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Looks pretty sane to me. Just standard debian stable repositories and one additional NextThing repository (probably for a custom kernel). Output of &amp;#8216;&lt;code&gt;uname -r&lt;/code&gt;&lt;span class="quo"&gt;&amp;#8216;&lt;/span&gt; is &lt;em&gt;4.3.0-ntc&lt;/em&gt;. I have to admit that I am not entirely shure about &amp;#8216;http.debian.net/debian&amp;#8217; (jessie-backports). I think that I am going to change that&amp;nbsp;line.&lt;/p&gt;
 &lt;p&gt;Now let&amp;#8217;s install aptitude and additional programs (I like&amp;nbsp;aptitude):&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;apt-get update
 apt-get install aptitude
