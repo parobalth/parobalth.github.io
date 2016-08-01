@@ -24,13 +24,16 @@ I recieved my C.h.i.p. last week. As far as I can tell right now everything went
 &lt;h2 id="thoughts-and-opinion"&gt;Thoughts and opinion&lt;a class="headerlink" href="#thoughts-and-opinion" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Let us just think how incredible this tiny computer is and how much you get for your $9! With this price tag it is an absolute no-brainer and you should definitely get one &amp;#8212; but it appears you will have to wait till fall. Here are some reasons why I am quite excited about NextThings&amp;nbsp;C.h.i.p.; &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;full root access&lt;/strong&gt; &amp;#8212; this reminds me of a paragraph in Eric S. Raymonds famous &lt;span class="caps"&gt;FAQ&lt;/span&gt; &amp;#8220;How to become a Hacker&amp;#8221; (which is absolutely not about breaking into computers of other&amp;nbsp;people!): &lt;/p&gt;
-&lt;blockquote&gt;
+&lt;li&gt;&lt;strong&gt;full root access&lt;/strong&gt; &amp;#8212; this reminds me of a paragraph in Eric S. Raymonds famous &lt;span class="caps"&gt;FAQ&lt;/span&gt; &amp;#8220;How to become a Hacker&amp;#8221; (which is absolutely not about breaking into computers of other people!): &lt;blockquote&gt;
 &lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;I&amp;#8217;ll assume you have a personal computer or can get access to one. (Take a moment to appreciate how much that means. The hacker culture originally evolved back when computers were so expensive that individuals could not own them.) The single most important step any newbie can take toward acquiring hacker skills is to get a copy of Linux or one of the &lt;span class="caps"&gt;BSD&lt;/span&gt;-Unixes, install it on a personal machine, and run it.&amp;#8221; 
-&amp;#8212; Read all of the mentioned &lt;span class="caps"&gt;FAQ&lt;/span&gt; &lt;a href="http://www.catb.org/esr/faqs/hacker-howto.html"&gt;here&lt;/a&gt;. 
-&amp;#8230;and again a paragraph about Linux of Eric S. Raymonds &lt;span class="caps"&gt;FAQ&lt;/span&gt;: 
-&amp;#8220;Learn it. Run it. Tinker with it. Talk to the Internet with it. Read the code. Modify the code. You&amp;#8217;ll get better programming tools (including C, &lt;span class="caps"&gt;LISP&lt;/span&gt;, Python, and Perl) than any Microsoft operating system can dream of hosting, you&amp;#8217;ll have fun, and you&amp;#8217;ll soak up more knowledge than you realize you&amp;#8217;re learning until you look back on it as a master&amp;nbsp;hacker.&amp;#8221;&lt;/p&gt;
+&amp;#8212; Read all of the mentioned &lt;span class="caps"&gt;FAQ&lt;/span&gt; &lt;a href="http://www.catb.org/esr/faqs/hacker-howto.html"&gt;here&lt;/a&gt;. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;uses Debian Jessie (stable) repositories&lt;/strong&gt; &amp;#8212; This is great news. Debian is my preferred distribution. You get a ton of high quality packages. Debian has high community standards and a social contract. 
+&amp;#8230;and again a paragraph about Linux of Eric S. Raymonds &lt;span class="caps"&gt;FAQ&lt;/span&gt;: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;Learn it. Run it. Tinker with it. Talk to the Internet with it. Read the code. Modify the code. You&amp;#8217;ll get better programming tools (including C, &lt;span class="caps"&gt;LISP&lt;/span&gt;, Python, and Perl) than any Microsoft operating system can dream of hosting, you&amp;#8217;ll have fun, and you&amp;#8217;ll soak up more knowledge than you realize you&amp;#8217;re learning until you look back on it as a master&amp;nbsp;hacker.&amp;#8221;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
