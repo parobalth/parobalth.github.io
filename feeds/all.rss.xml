@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Parobalth</title><link>http://parobalth.github.io/</link><description></description><atom:link href="http://parobalth.github.io/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Mon, 01 Aug 2016 00:00:00 +0200</lastBuildDate><item><title>Thoughts about NextThing C.h.i.p.</title><link>http://parobalth.github.io/chip-thoughts</link><description>&lt;p&gt;&lt;strong&gt;Warning&lt;/strong&gt; &amp;#8212; &lt;em&gt;thinking and opinion building in progress&lt;/em&gt;: This is a quick&amp;amp;dirty post about my first thoughts about NextThing C.h.i.p. Consider it as a first draft &amp;#8212; I am going to modify this post in the next weeks and correct&amp;nbsp;typos.&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Parobalth</title><link>http://parobalth.github.io/</link><description></description><atom:link href="http://parobalth.github.io/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 05 Aug 2016 00:00:00 +0200</lastBuildDate><item><title>Thoughts about NextThing C.h.i.p.</title><link>http://parobalth.github.io/chip-thoughts</link><description>&lt;p&gt;&lt;strong&gt;Warning&lt;/strong&gt; &amp;#8212; &lt;em&gt;thinking and opinion building in progress&lt;/em&gt;: This is a quick&amp;amp;dirty post about my first thoughts about NextThing C.h.i.p. Consider it as a first draft &amp;#8212; I am going to modify this post in the next weeks and correct&amp;nbsp;typos.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="box" src="./images/box_small.JPG" /&gt;
 My thoughts about &lt;a href="https://getchip.com/pages/chip"&gt;NextThing C.h.i.p. v. 1.0&lt;/a&gt;:&lt;/p&gt;
 &lt;h2 id="from-ordering-to-delivery"&gt;From ordering to delivery&lt;a class="headerlink" href="#from-ordering-to-delivery" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
@@ -46,6 +46,7 @@ I recieved my C.h.i.p. last week. As far as I can tell right now everything went
 &lt;li&gt;&lt;strong&gt;one&amp;nbsp;Usb-port&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;female pins&lt;/strong&gt; &amp;#8212; ready for easy connection with standard male pin headers &lt;img alt="pins" src="./images/pins_small.JPG" /&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;battery support&lt;/strong&gt; &amp;#8212; using chip with a battery seems easy, but I have not tried it&amp;nbsp;yet.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;one tiny button&lt;/strong&gt; &amp;#8212; working like the power button on a normal&amp;nbsp;computer. &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;em&gt;Verdict&lt;/em&gt;: Chip is a perfect headless single board computer to hack, make and embed into projects. It is unexpensive. It can be a useful device in educational projects or in developing countries. A perfect gift for children and young adults. Chip could be a good computer for Joe Average Hacker, his children &lt;strong&gt;and&lt;/strong&gt; his aunt Tillie. To reach $9 NextThing compromised on the video output (no vga, no hdmi, read about the reasons for this decision &lt;a href="http://docs.getchip.com/chip.html#why-composite-video"&gt;here&lt;/a&gt;). Usability out of the box is &lt;strong&gt;very&lt;/strong&gt;&amp;nbsp;high. &lt;/p&gt;
 &lt;hr /&gt;
@@ -79,18 +80,19 @@ cdc_acm 1-2:2.0: ttyACM0: USB ACM device
 
 
 &lt;p&gt;So your Chip is recognized as &amp;#8216;&lt;em&gt;ttyACM0&lt;/em&gt;&amp;#8216;.
-I had some permission problems and had to connect&amp;nbsp;with&lt;/p&gt;
+I had some permission problems because my user was not a member of the dialout group and had to connect&amp;nbsp;with&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;sudo screen /dev/ttyACM0
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Login as &lt;code&gt;root&lt;/code&gt; with password &lt;code&gt;chip&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If you add your user to the dialout group you can connect with regular user privileges.
+Login as &lt;code&gt;root&lt;/code&gt; with password &lt;code&gt;chip&lt;/code&gt; or with username &lt;code&gt;chip&lt;/code&gt; and password &lt;code&gt;chip&lt;/code&gt;. User chip is already a member of the sudo&amp;nbsp;group.&lt;/p&gt;
 &lt;p&gt;set up a wifi connection with&amp;nbsp;nmtui:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;nmtui
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Now you can ssh into chip but you may want to change the root password (&lt;code&gt;passwd&lt;/code&gt;) first, create a normal user (&lt;code&gt;adduser foo&lt;/code&gt;) and forbid root login via ssh (change settings in /etc/ssh/sshd_config). Add your user &amp;#8216;foo&amp;#8217; to the sudo group with &amp;#8216;&lt;code&gt;adduser foo sudo&lt;/code&gt;&lt;span class="quo"&gt;&amp;#8216;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Now you can ssh into chip but you may want to change the root password and the password of user chip (&lt;code&gt;passwd&lt;/code&gt;) first, create a normal user (&lt;code&gt;adduser foo&lt;/code&gt;) and forbid root login via ssh (change settings in /etc/ssh/sshd_config). Add your user &amp;#8216;foo&amp;#8217; to the sudo group with &amp;#8216;&lt;code&gt;adduser foo sudo&lt;/code&gt;&lt;span class="quo"&gt;&amp;#8216;&lt;/span&gt; if you&amp;nbsp;like. &lt;/p&gt;
 &lt;p&gt;Now you can ssh to your chip with (replace &amp;#8216;foo&amp;#8217; with your username and &amp;#8216;xxx.xxx.x.x&amp;#8217; with the &lt;span class="caps"&gt;IP&lt;/span&gt; adress of&amp;nbsp;chip):&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;ssh foo@xxx.xxx.x.x
 &lt;/pre&gt;&lt;/div&gt;
@@ -122,7 +124,7 @@ apt-get install aptitude
 &lt;p&gt;If you have any questions, suggestions, thoughts and comments please feel free to email&amp;nbsp;me.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;License of this blog&amp;nbsp;post:&lt;/p&gt;
-&lt;p&gt;&lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;&lt;img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /&gt;&lt;/a&gt;&lt;br /&gt;This work is licensed under a &lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Parobalth</dc:creator><pubDate>Sat, 30 Jul 2016 00:00:00 +0200</pubDate><guid>tag:parobalth.github.io,2016-07-29:chip-intro</guid><category>c.h.i.p.</category><category>debian</category><category>nextthing</category><category>usb-serial</category><category>ssh</category><category>draft</category></item><item><title>Gif screencast</title><link>http://parobalth.github.io/gif-screencast</link><description>&lt;h2 id="problem-and-introduction"&gt;Problem and Introduction&lt;a class="headerlink" href="#problem-and-introduction" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;&lt;img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /&gt;&lt;/a&gt;&lt;br /&gt;This work is licensed under a &lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Parobalth</dc:creator><pubDate>Fri, 05 Aug 2016 00:00:00 +0200</pubDate><guid>tag:parobalth.github.io,2016-07-29:chip-intro</guid><category>c.h.i.p.</category><category>debian</category><category>nextthing</category><category>usb-serial</category><category>ssh</category><category>draft</category></item><item><title>Gif screencast</title><link>http://parobalth.github.io/gif-screencast</link><description>&lt;h2 id="problem-and-introduction"&gt;Problem and Introduction&lt;a class="headerlink" href="#problem-and-introduction" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;I wanted to include some gif screencasts in my posts and started looking for a neat solution. I can live with a command line or gui solution as long as it works reasonable well and is in the Debian Jessie (stable)&amp;nbsp;repositories.&lt;/p&gt;
 &lt;h2 id="interesting-links"&gt;Interesting Links&lt;a class="headerlink" href="#interesting-links" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;

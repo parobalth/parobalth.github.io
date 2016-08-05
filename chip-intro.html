@@ -18,7 +18,7 @@
 <meta property="og:site_name" content="Parobalth" />
 <meta property="og:article:author" content="Parobalth" />
 <meta property="og:article:published_time" content="2016-07-29T00:00:00+02:00" />
-<meta property="" content="2016-07-30T00:00:00+02:00" />
+<meta property="" content="2016-08-05T00:00:00+02:00" />
 <meta name="twitter:title" content="NextThing C.h.i.p. ">
 <meta name="twitter:description" content="Warning — work in progress: This is a quick&amp;dirty post about the first steps to connect NextThing C.h.i.p. via USB serial on a Debian Jessie machine. Consider it as a first draft — I am going to modify this post in the next few days and correct typos ...">
 
@@ -98,18 +98,19 @@ cdc_acm 1-2:2.0: ttyACM0: USB ACM device
 
 
 <p>So your Chip is recognized as &#8216;<em>ttyACM0</em>&#8216;.
-I had some permission problems and had to connect&nbsp;with</p>
+I had some permission problems because my user was not a member of the dialout group and had to connect&nbsp;with</p>
 <div class="highlight"><pre>sudo screen /dev/ttyACM0
 </pre></div>
 
 
-<p>Login as <code>root</code> with password <code>chip</code>.</p>
+<p>If you add your user to the dialout group you can connect with regular user privileges.
+Login as <code>root</code> with password <code>chip</code> or with username <code>chip</code> and password <code>chip</code>. User chip is already a member of the sudo&nbsp;group.</p>
 <p>set up a wifi connection with&nbsp;nmtui:</p>
 <div class="highlight"><pre>nmtui
 </pre></div>
 
 
-<p>Now you can ssh into chip but you may want to change the root password (<code>passwd</code>) first, create a normal user (<code>adduser foo</code>) and forbid root login via ssh (change settings in /etc/ssh/sshd_config). Add your user &#8216;foo&#8217; to the sudo group with &#8216;<code>adduser foo sudo</code><span class="quo">&#8216;</span></p>
+<p>Now you can ssh into chip but you may want to change the root password and the password of user chip (<code>passwd</code>) first, create a normal user (<code>adduser foo</code>) and forbid root login via ssh (change settings in /etc/ssh/sshd_config). Add your user &#8216;foo&#8217; to the sudo group with &#8216;<code>adduser foo sudo</code><span class="quo">&#8216;</span> if you&nbsp;like. </p>
 <p>Now you can ssh to your chip with (replace &#8216;foo&#8217; with your username and &#8216;xxx.xxx.x.x&#8217; with the <span class="caps">IP</span> adress of&nbsp;chip):</p>
 <div class="highlight"><pre>ssh foo@xxx.xxx.x.x
 </pre></div>
@@ -152,7 +153,7 @@ apt-get install aptitude
             <time pubdate="pubdate" datetime="2016-07-29T00:00:00+02:00">Jul 29, 2016</time>
 
 <h4>Last Updated</h4>
-<time datetime="2016-07-30T00:00:00+02:00">Jul 30, 2016</time>
+<time datetime="2016-08-05T00:00:00+02:00">Aug 5, 2016</time>
 
             <h4>Category</h4>
             <a class="category-link" href="http://parobalth.github.io/categories.html#computer-ref">Computer</a>
