@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Parobalth</title><link>http://parobalth.github.io/</link><description></description><atom:link href="http://parobalth.github.io/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 05 Aug 2016 00:00:00 +0200</lastBuildDate><item><title>Thoughts about NextThing C.h.i.p.</title><link>http://parobalth.github.io/chip-thoughts</link><description>&lt;p&gt;&lt;strong&gt;Warning&lt;/strong&gt; &amp;#8212; &lt;em&gt;thinking and opinion building in progress&lt;/em&gt;: This is a quick&amp;amp;dirty post about my first thoughts about NextThing C.h.i.p. Consider it as a first draft &amp;#8212; I am going to modify this post in the next weeks and correct&amp;nbsp;typos.&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Parobalth</title><link>http://parobalth.github.io/</link><description></description><atom:link href="http://parobalth.github.io/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 13 Aug 2016 00:00:00 +0200</lastBuildDate><item><title>ssh: short host names</title><link>http://parobalth.github.io/ssh-short-host</link><description>&lt;p&gt;I found an explanation how to abbreviate host names for ssh connections.
+It can be found &lt;a href="https://www.saotn.org/ssh-shorthand-name-hostnames"&gt;here&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;So basically you add these lines to &lt;code&gt;.ssh/config&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;Host foo
+HostName IP-adress-of-server
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now you can connect&amp;nbsp;with:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;ssh foo
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;if you have the same username on host and client&amp;nbsp;or&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;ssh user@foo
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;to use a certain&amp;nbsp;username.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;If you have any questions, suggestions, thoughts and comments please feel free to email&amp;nbsp;me.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;License of this blog&amp;nbsp;post:&lt;/p&gt;
+&lt;p&gt;&lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;&lt;img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /&gt;&lt;/a&gt;&lt;br /&gt;This work is licensed under a &lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Parobalth</dc:creator><pubDate>Sat, 13 Aug 2016 00:00:00 +0200</pubDate><guid>tag:parobalth.github.io,2016-08-13:ssh-short-host</guid><category>ssh</category></item><item><title>Thoughts about NextThing C.h.i.p.</title><link>http://parobalth.github.io/chip-thoughts</link><description>&lt;p&gt;&lt;strong&gt;Warning&lt;/strong&gt; &amp;#8212; &lt;em&gt;thinking and opinion building in progress&lt;/em&gt;: This is a quick&amp;amp;dirty post about my first thoughts about NextThing C.h.i.p. Consider it as a first draft &amp;#8212; I am going to modify this post in the next weeks and correct&amp;nbsp;typos.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="box" src="./images/box_small.JPG" /&gt;
 My thoughts about &lt;a href="https://getchip.com/pages/chip"&gt;NextThing C.h.i.p. v. 1.0&lt;/a&gt;:&lt;/p&gt;
 &lt;h2 id="from-ordering-to-delivery"&gt;From ordering to delivery&lt;a class="headerlink" href="#from-ordering-to-delivery" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
