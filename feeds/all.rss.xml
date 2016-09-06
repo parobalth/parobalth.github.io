@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Parobalth</title><link>http://parobalth.github.io/</link><description></description><atom:link href="http://parobalth.github.io/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 06 Sep 2016 00:00:00 +0200</lastBuildDate><item><title>Gnu Taler</title><link>http://parobalth.github.io/gnu-taler</link><description>&lt;blockquote&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Parobalth</title><link>http://parobalth.github.io/</link><description></description><atom:link href="http://parobalth.github.io/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 06 Sep 2016 00:00:00 +0200</lastBuildDate><item><title>Gnu Taler</title><link>http://parobalth.github.io/gnu-taler</link><description>&lt;p&gt;&lt;img alt="NYTimes" src="./images/NYTimes.png" /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
 &lt;p&gt;Publishers, please let me pay you –&amp;nbsp;anonymously!&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;There is an &lt;a href="https://www.theguardian.com/technology/2016/sep/01/online-publishers-readers-ad-block-surveillance-donate-anonymously"&gt;article by Richard Stallman&lt;/a&gt; in The Guardian about ad-blocking, surveillance, targeted ads and anonymous payment for content. The article summarizes some thoughts I had for a long time and is highly recommended. 
