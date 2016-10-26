@@ -10,19 +10,18 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="vim, plugin, pathogen, tutorial, Computer, " />
+<meta name="keywords" content="screen, bash, xterm, title, Computer, " />
 
-<meta property="og:title" content="Introduction to pathogen "/>
-<meta property="og:url" content="http://parobalth.github.io/pathogen-intro" />
-<meta property="og:description" content="I have been afraid to try pathogen-plugin for vim for a long time. I thought it would be complicated and postponed it. Actually it is not hard at all and I should have tried it ages ago. Install debian package vim-pathogen. Then follow this advice: https://gist.github.com/romainl ..." />
+<meta property="og:title" content="Screen title: Name of program "/>
+<meta property="og:url" content="http://parobalth.github.io/screen-title" />
+<meta property="og:description" content="Introduction¶ Screen doesn’t set a useful window title. Usually all you get is bash, bash, bash and you have to set them manually with C-a A. Solution¶ I found a solution for bash from: http://aperiodic.net/screen/title_examples that works for me although it is a weird hack ..." />
 <meta property="og:site_name" content="Parobalth" />
 <meta property="og:article:author" content="Parobalth" />
-<meta property="og:article:published_time" content="2016-10-10T00:00:00+02:00" />
-<meta property="" content="2016-10-26T00:00:00+02:00" />
-<meta name="twitter:title" content="Introduction to pathogen ">
-<meta name="twitter:description" content="I have been afraid to try pathogen-plugin for vim for a long time. I thought it would be complicated and postponed it. Actually it is not hard at all and I should have tried it ages ago. Install debian package vim-pathogen. Then follow this advice: https://gist.github.com/romainl ...">
+<meta property="og:article:published_time" content="2016-10-26T00:00:00+02:00" />
+<meta name="twitter:title" content="Screen title: Name of program ">
+<meta name="twitter:description" content="Introduction¶ Screen doesn’t set a useful window title. Usually all you get is bash, bash, bash and you have to set them manually with C-a A. Solution¶ I found a solution for bash from: http://aperiodic.net/screen/title_examples that works for me although it is a weird hack ...">
 
-        <title>Introduction to pathogen  · Parobalth
+        <title>Screen title: Name of program  · Parobalth
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
@@ -63,7 +62,7 @@
 <article>
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1><a href="http://parobalth.github.io/pathogen-intro"> Introduction to&nbsp;pathogen  </a></h1>
+    <h1><a href="http://parobalth.github.io/screen-title"> Screen title: Name of&nbsp;program  </a></h1>
     </header>
 </div>
 
@@ -71,26 +70,28 @@
         <div class="span8 offset2 article-content">
 
             
-            <p>I have been afraid to try <a href="https://github.com/tpope/vim-pathogen">pathogen-plugin</a> for vim for a long time. I thought it would be complicated and postponed it. Actually it is not hard at all and I should have tried it ages&nbsp;ago. </p>
-<ol>
-<li>Install debian package <code>vim-pathogen</code>. </li>
-<li>Then follow this advice:
-<a href="https://gist.github.com/romainl/9970697">https://gist.github.com/romainl/9970697</a> or
-<a href="https://github.com/tpope/vim-pathogen">https://github.com/tpope/vim-pathogen</a></li>
-</ol>
-<p>As an example let us install vimwiki (installation instructions at the end of the <span class="caps">README</span>):
-<a href="https://github.com/vimwiki/vimwiki">https://github.com/vimwiki/vimwiki</a></p>
-<p>I took the gitly&nbsp;approach:</p>
-<div class="highlight"><pre><span class="nb">cd</span> .vim/bundle
-git clone https://github.com/vimwiki/vimwiki
+            <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p><a href="https://www.gnu.org/software/screen/">Screen</a> doesn&#8217;t set a useful window title. Usually all you get is bash, bash, bash and you have to set them manually with <code>C-a A</code>.  </p>
+<h2 id="solution">Solution<a class="headerlink" href="#solution" title="Permanent link">&para;</a></h2>
+<p>I found a solution for bash from:
+<a href="http://aperiodic.net/screen/title_examples">http://aperiodic.net/screen/title_examples</a>
+that works for me although it is a weird&nbsp;hack.</p>
+<p>Insert in <code>.screenrc</code>:</p>
+<div class="highlight"><pre># 13.08.2016 inserted to get descriptive titles
+shelltitle &quot;$ |bash&quot;
 </pre></div>
 
 
-<hr />
-<p>If you have any questions, suggestions, thoughts and comments please feel free to email&nbsp;me.</p>
+<p>Insert in <code>.bashrc</code>:</p>
+<div class="highlight"><pre># 13.08.2016 inserted to get descriptive titles
+export PS1=&#39;\[\033k\033\\\]\u@\h:\w\$ &#39;
+</pre></div>
+
+
+<p>I think it would be an additional improvement to add the current path to the window title to see if you work local or remote. I am going to post if I find a better solution to this&nbsp;problem.</p>
 <hr />
 <p>License of this blog&nbsp;post:</p>
-<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="./images/cc-88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
             
             
             <hr/>
@@ -98,26 +99,22 @@ git clone https://github.com/vimwiki/vimwiki
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
             <h4>Published</h4>
-            <time pubdate="pubdate" datetime="2016-10-10T00:00:00+02:00">Oct 10, 2016</time>
-
-<h4>Last Updated</h4>
-<time datetime="2016-10-26T00:00:00+02:00">Oct 26, 2016</time>
-
+            <time pubdate="pubdate" datetime="2016-10-26T00:00:00+02:00">Oct 26, 2016</time>
             <h4>Category</h4>
             <a class="category-link" href="http://parobalth.github.io/categories.html#computer-ref">Computer</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="http://parobalth.github.io/tags.html#pathogen-ref">pathogen
-                    <span>1</span>
-</a></li>
-                <li><a href="http://parobalth.github.io/tags.html#plugin-ref">plugin
-                    <span>1</span>
-</a></li>
-                <li><a href="http://parobalth.github.io/tags.html#tutorial-ref">tutorial
-                    <span>2</span>
-</a></li>
-                <li><a href="http://parobalth.github.io/tags.html#vim-ref">vim
+                <li><a href="http://parobalth.github.io/tags.html#bash-ref">bash
                     <span>4</span>
+</a></li>
+                <li><a href="http://parobalth.github.io/tags.html#screen-ref">screen
+                    <span>1</span>
+</a></li>
+                <li><a href="http://parobalth.github.io/tags.html#title-ref">title
+                    <span>1</span>
+</a></li>
+                <li><a href="http://parobalth.github.io/tags.html#xterm-ref">xterm
+                    <span>2</span>
 </a></li>
             </ul>
 <h4>Contact</h4>

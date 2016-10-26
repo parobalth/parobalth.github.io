@@ -1,5 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Parobalth</title><link href="http://parobalth.github.io/" rel="alternate"></link><link href="http://parobalth.github.io/feeds/all.atom.xml" rel="self"></link><id>http://parobalth.github.io/</id><updated>2016-10-11T00:00:00+02:00</updated><entry><title>Introduction to git</title><link href="http://parobalth.github.io/git-intro" rel="alternate"></link><updated>2016-10-11T00:00:00+02:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2016-10-10:git-intro</id><summary type="html">&lt;p&gt;Git can be intimidating but don&amp;#8217;t be afraid. It may be a long way from beginner to wizard but it is not hard to put your personal projects under version control or to fork a public repository.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Parobalth</title><link href="http://parobalth.github.io/" rel="alternate"></link><link href="http://parobalth.github.io/feeds/all.atom.xml" rel="self"></link><id>http://parobalth.github.io/</id><updated>2016-10-26T00:00:00+02:00</updated><entry><title>Nethack</title><link href="http://parobalth.github.io/nethack" rel="alternate"></link><updated>2016-10-26T00:00:00+02:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2016-10-26:nethack</id><summary type="html">&lt;p&gt;from &lt;a href="http://www.nethack.org/v360/release.html"&gt;http://www.nethack.org/v360/release.html&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As some may know, Terry Pratchett was a fan of NetHack, dating back to the time that we introduced the Tourist class which was openly based on the Discworld novels he penned. At the time of his passing this year, the DevTeam decided that it would be a fitting tribute to take a number of our favourite quotes from the various Discworld novels and incorporate them into the&amp;nbsp;game. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If the above quote is not reason alone to try this marvellous computer game I hope to convince you with my humble thoughts. This is a post about the computer game nethack. When I first read about nethack I tested it for about 3 minutes and thought: &amp;#8220;Oh my god, it&amp;#8217;s ancient. It&amp;#8217;s horrible. Why does anybody want to waste his time with nethack? How can I&amp;nbsp;quit?&amp;#8221; &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;My first impression of nethack was dead&amp;nbsp;wrong!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Years later somehow I gave nethack another chance or better phrased I gave nethack the first real chance and now I am hooked. I love it. Playing nethack is so much fun. Every game is different. In some aspects it is like reading a good book - the most important things happen in your brain/imagination not on the page or on the screen.
+So please try it for at least 30 minutes before deciding to quit. I know that learning the keys can take some time especially if you are not yet familiar with the editor vim. 
+Nethack should be a package in every major distribution so installation is hassle free. I recommend the classic commandline-interface for the visuals. Once installed, start nethack by typing &lt;code&gt;nethack&lt;/code&gt; at your command-line&amp;nbsp;prompt.&lt;/p&gt;
+&lt;p&gt;&lt;a href="./images/nethack-bash.png"&gt;&lt;img alt="prompt" src="./images/nethack-bash.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I recommend to manually select race, role, gender and alignment and stick with your choice for a few games. For your first games it may be wise to select a class which is well equipped for adventure and combat so don&amp;#8217;t pick the tourist class. I often play with an elven Ranger or a human&amp;nbsp;wizard. &lt;/p&gt;
+&lt;p&gt;&lt;a href="./images/nethack-start.png"&gt;&lt;img alt="class selection" src="./images/nethack-start.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="the-adventure-begins"&gt;The adventure begins&amp;#8230;&lt;a class="headerlink" href="#the-adventure-begins" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="./images/nethack-lv1.png"&gt;&lt;img alt="level1" src="./images/nethack-lv1.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Once you have chosen your character it is time to baptize your animal. Press &amp;#8216;&lt;code&gt;C&lt;/code&gt;&lt;span class="quo"&gt;&amp;#8216;&lt;/span&gt; (yes, that is a capital C). Now navigate the cursor (with &lt;code&gt;hjkl&lt;/code&gt;-keys) to your animal and press &amp;#8216;&lt;code&gt;.&lt;/code&gt;&lt;span class="quo"&gt;&amp;#8216;&lt;/span&gt;. Enter your preferred name and confirm by pressing &lt;code&gt;Enter&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;&lt;a href="./images/nethack-baptize.png"&gt;&lt;img alt="baptize" src="./images/nethack-baptize.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Start moving through the first level with the &lt;code&gt;hjkl&lt;/code&gt;-keys. As a beginner there is absolutely no chance of winning the game. Try to stay alive. Look for food, gold, weapons and other useful&amp;nbsp;items.&lt;/p&gt;
+&lt;p&gt;&lt;a href="./images/nethack-pethelp.png"&gt;&lt;img alt="pethelp" src="./images/nethack-pethelp.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;From the manpage of&amp;nbsp;nethack:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;To  get started you really only need to know two commands.  The command
+&lt;code&gt;?&lt;/code&gt;  will give you a list of the available commands  (as  well  as  other
+information)  and the command / will identify the things you see on the&amp;nbsp;screen.&lt;/p&gt;
+&lt;p&gt;To win the game (as opposed to merely playing to  beat  other  people&amp;#8217;s
+high  scores)  you  must locate the Amulet of Yendor which is somewhere
+below the 20th level of  the  dungeon  and  get  it  out.   Nobody  has
+achieved this yet; anybody who does will probably go down in history as
+a hero among&amp;nbsp;heros.&amp;#8221;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="useful-links"&gt;Useful links&lt;a class="headerlink" href="#useful-links" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://matija.suklje.name/nethack-360-is-out"&gt;Read&lt;/a&gt; Hook&amp;#8217;s blogpost about nethack&amp;nbsp;3.6.0. &lt;/p&gt;
+&lt;p&gt;Official Guidebook:
+&lt;a href="http://www.nethack.org/v360/Guidebook.html"&gt;http://www.nethack.org/v360/Guidebook.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Wikipedia:
+&lt;a href="https://en.wikipedia.org/wiki/NetHack"&gt;https://en.wikipedia.org/wiki/NetHack&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;If you have any questions, suggestions, thoughts and comments please feel free to email&amp;nbsp;me.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;License of this blog&amp;nbsp;post:&lt;/p&gt;
+&lt;p&gt;&lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;&lt;img alt="Creative Commons License" style="border-width:0" src="./images/cc-88x31.png" /&gt;&lt;/a&gt;&lt;br /&gt;This work is licensed under a &lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;.&lt;/p&gt;</summary><category term="game"></category><category term="nethack"></category><category term="command-line"></category></entry><entry><title>Screen title: Name of program</title><link href="http://parobalth.github.io/screen-title" rel="alternate"></link><updated>2016-10-26T00:00:00+02:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2016-10-26:screen-title</id><summary type="html">&lt;h2 id="introduction"&gt;Introduction&lt;a class="headerlink" href="#introduction" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.gnu.org/software/screen/"&gt;Screen&lt;/a&gt; doesn&amp;#8217;t set a useful window title. Usually all you get is bash, bash, bash and you have to set them manually with &lt;code&gt;C-a A&lt;/code&gt;.  &lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;a class="headerlink" href="#solution" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I found a solution for bash from:
+&lt;a href="http://aperiodic.net/screen/title_examples"&gt;http://aperiodic.net/screen/title_examples&lt;/a&gt;
+that works for me although it is a weird&amp;nbsp;hack.&lt;/p&gt;
+&lt;p&gt;Insert in &lt;code&gt;.screenrc&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;# 13.08.2016 inserted to get descriptive titles
+shelltitle &amp;quot;$ |bash&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Insert in &lt;code&gt;.bashrc&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;# 13.08.2016 inserted to get descriptive titles
+export PS1=&amp;#39;\[\033k\033\\\]\u@\h:\w\$ &amp;#39;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;I think it would be an additional improvement to add the current path to the window title to see if you work local or remote. I am going to post if I find a better solution to this&amp;nbsp;problem.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;License of this blog&amp;nbsp;post:&lt;/p&gt;
+&lt;p&gt;&lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;&lt;img alt="Creative Commons License" style="border-width:0" src="./images/cc-88x31.png" /&gt;&lt;/a&gt;&lt;br /&gt;This work is licensed under a &lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;.&lt;/p&gt;</summary><category term="screen"></category><category term="bash"></category><category term="xterm"></category><category term="title"></category></entry><entry><title>Weekly News 01</title><link href="http://parobalth.github.io/weekly-news-summary-01" rel="alternate"></link><updated>2016-10-26T00:00:00+02:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2016-10-26:weekly-news-summary-01</id><summary type="html">&lt;p&gt;I started this post months ago and never finished it. So here are some interesting links from mid&amp;nbsp;July. &lt;/p&gt;
+&lt;h2 id="news-summary"&gt;News summary&lt;a class="headerlink" href="#news-summary" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The Electronic Frontier Foundation is suing the &lt;span class="caps"&gt;US&lt;/span&gt; government over ‘unconstitutional’ use of the Digital Millennium Copyright&amp;nbsp;Act:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.theguardian.com/technology/2016/jul/21/digital-millennium-copyright-act-eff-supreme-court"&gt;https://www.theguardian.com/technology/2016/jul/21/digital-millennium-copyright-act-eff-supreme-court&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.eff.org/deeplinks/2016/07/section-1201-dmca-cannot-pass-constitutional-scrutiny"&gt;https://www.eff.org/deeplinks/2016/07/section-1201-dmca-cannot-pass-constitutional-scrutiny&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.eff.org/deeplinks/2016/07/research-and-remixes-law-wont-allow"&gt;https://www.eff.org/deeplinks/2016/07/research-and-remixes-law-wont-allow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/elsehow/aaronson-oracle/tree/3a1b636908dd1a9d93e44fd6df1a717b2dce5f8e"&gt;https://github.com/elsehow/aaronson-oracle/tree/3a1b636908dd1a9d93e44fd6df1a717b2dce5f8e&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://xkcd.com/936/"&gt;https://xkcd.com/936/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases"&gt;https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://people.ischool.berkeley.edu/~nick/aaronson-oracle/"&gt;http://people.ischool.berkeley.edu/~nick/aaronson-oracle/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;If you have any questions, suggestions, thoughts and comments please feel free to email&amp;nbsp;me.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;License of this blog&amp;nbsp;post:&lt;/p&gt;
+&lt;p&gt;&lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;&lt;img alt="Creative Commons License" style="border-width:0" src="./images/cc-88x31.png" /&gt;&lt;/a&gt;&lt;br /&gt;This work is licensed under a &lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;.&lt;/p&gt;</summary><category term="news"></category><category term="privacy"></category><category term="drm"></category></entry><entry><title>Introduction to git</title><link href="http://parobalth.github.io/git-intro" rel="alternate"></link><updated>2016-10-11T00:00:00+02:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2016-10-10:git-intro</id><summary type="html">&lt;p&gt;Git can be intimidating but don&amp;#8217;t be afraid. It may be a long way from beginner to wizard but it is not hard to put your personal projects under version control or to fork a public repository.
 Read the best tutorial that I know&amp;nbsp;with:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;man gittutorial
 &lt;/pre&gt;&lt;/div&gt;
@@ -16,14 +94,14 @@ Read the best tutorial that I know&amp;nbsp;with:&lt;/p&gt;
 &lt;p&gt;If you have any questions, suggestions, thoughts and comments please feel free to email&amp;nbsp;me.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;License of this blog&amp;nbsp;post:&lt;/p&gt;
-&lt;p&gt;&lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;&lt;img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /&gt;&lt;/a&gt;&lt;br /&gt;This work is licensed under a &lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;.&lt;/p&gt;</summary><category term="git"></category><category term="command-line"></category><category term="tutorial"></category></entry><entry><title>Introduction to Pathogen</title><link href="http://parobalth.github.io/pathogen-intro" rel="alternate"></link><updated>2016-10-10T00:00:00+02:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2016-10-10:pathogen-intro</id><summary type="html">&lt;p&gt;Was afraid to try &lt;a href="https://github.com/tpope/vim-pathogen"&gt;pathogen-plugin&lt;/a&gt; for vim for a long time. I thought it would be complicated and postponed it for a long time. Actually it is not hard at all and I should have tried it ages&amp;nbsp;ago. &lt;/p&gt;
+&lt;p&gt;&lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;&lt;img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /&gt;&lt;/a&gt;&lt;br /&gt;This work is licensed under a &lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;.&lt;/p&gt;</summary><category term="git"></category><category term="command-line"></category><category term="tutorial"></category></entry><entry><title>Introduction to pathogen</title><link href="http://parobalth.github.io/pathogen-intro" rel="alternate"></link><updated>2016-10-26T00:00:00+02:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2016-10-10:pathogen-intro</id><summary type="html">&lt;p&gt;I have been afraid to try &lt;a href="https://github.com/tpope/vim-pathogen"&gt;pathogen-plugin&lt;/a&gt; for vim for a long time. I thought it would be complicated and postponed it. Actually it is not hard at all and I should have tried it ages&amp;nbsp;ago. &lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Install debian package &lt;code&gt;vim-pathogen&lt;/code&gt;. &lt;/li&gt;
 &lt;li&gt;Then follow this advice:
 &lt;a href="https://gist.github.com/romainl/9970697"&gt;https://gist.github.com/romainl/9970697&lt;/a&gt; or
 &lt;a href="https://github.com/tpope/vim-pathogen"&gt;https://github.com/tpope/vim-pathogen&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Let us install vimwiki (installation instructions at the end of the &lt;span class="caps"&gt;README&lt;/span&gt;):
+&lt;p&gt;As an example let us install vimwiki (installation instructions at the end of the &lt;span class="caps"&gt;README&lt;/span&gt;):
 &lt;a href="https://github.com/vimwiki/vimwiki"&gt;https://github.com/vimwiki/vimwiki&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I took the gitly&amp;nbsp;approach:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; .vim/bundle
