@@ -6,20 +6,7 @@ If you are following my rss feed please switch to &lt;a href="https://www.paroba
 &lt;p&gt;If you have any questions, suggestions, thoughts and comments please feel free to email&amp;nbsp;me.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;License of this blog&amp;nbsp;post:&lt;/p&gt;
-&lt;p&gt;&lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;&lt;img alt="Creative Commons License" style="border-width:0" src="./images/cc-88x31.png" /&gt;&lt;/a&gt;&lt;br /&gt;This work is licensed under a &lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;.&lt;/p&gt;</summary><category term="blog"></category></entry><entry><title>Holiday Testing</title><link href="http://parobalth.github.io/test-post" rel="alternate"></link><updated>2015-12-29T21:06:00+01:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2017-01-22:test-post</id><summary type="html">&lt;p&gt;Using the holidays for some testing!
-&lt;code&gt;Happy Holidays&lt;/code&gt; to all of&amp;nbsp;you!&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;def foobar():&lt;/code&gt;&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Hello World&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-
-&lt;p&gt;More&amp;nbsp;code:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;To follow the path
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Copyheart:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://copyheart.org"&gt;♡&lt;/a&gt;2015 by Parobalth. Copying is an act of love, please&amp;nbsp;share.&lt;/p&gt;</summary></entry><entry><title>2016: Another year is over…</title><link href="http://parobalth.github.io/2016-summary" rel="alternate"></link><updated>2016-12-31T00:00:00+01:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2016-12-31:2016-summary</id><summary type="html">&lt;p&gt;This blogpost is about some computer related things I did in&amp;nbsp;2016:&lt;/p&gt;
+&lt;p&gt;&lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;&lt;img alt="Creative Commons License" style="border-width:0" src="./images/cc-88x31.png" /&gt;&lt;/a&gt;&lt;br /&gt;This work is licensed under a &lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;.&lt;/p&gt;</summary><category term="blog"></category></entry><entry><title>2016: Another year is over…</title><link href="http://parobalth.github.io/2016-summary" rel="alternate"></link><updated>2016-12-31T00:00:00+01:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2016-12-31:2016-summary</id><summary type="html">&lt;p&gt;This blogpost is about some computer related things I did in&amp;nbsp;2016:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;tested &lt;a href="https://wiki.debian.org/FreedomBox"&gt;Freedombox&lt;/a&gt; on a &lt;a href="https://wiki.debian.org/FreedomBox/Hardware/RaspberryPi2"&gt;Raspberry Pi&amp;nbsp;2&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;flashed &lt;a href="https://openwrt.org/"&gt;OpenWrt&lt;/a&gt; to an &lt;a href="https://wiki.openwrt.org/toh/linksys/wrt54g"&gt;old&amp;nbsp;router&lt;/a&gt;&lt;/li&gt;
@@ -585,7 +572,20 @@ Hit &lt;code&gt;Enter&lt;/code&gt; to get back to your unmodified vim&amp;nbsp;b
 
 
 &lt;p&gt;Copyheart:
-&lt;a href="http://copyheart.org"&gt;♡&lt;/a&gt;2016 by Parobalth. Copying is an act of love, please&amp;nbsp;share.&lt;/p&gt;</summary><category term="bash"></category><category term="command-line"></category><category term="notes"></category><category term="append"></category><category term="history"></category><category term="fc"></category></entry><entry><title>Christmas Songs</title><link href="http://parobalth.github.io/christmas-songs" rel="alternate"></link><updated>2015-12-01T19:50:00+01:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2015-12-01:christmas-songs</id><summary type="html">&lt;p&gt;Christmas is coming! It&amp;#8217;s already December. To bring you into christmas mood I&amp;#8217;m sharing links to some of my favorite christmas&amp;nbsp;songs:&lt;/p&gt;
+&lt;a href="http://copyheart.org"&gt;♡&lt;/a&gt;2016 by Parobalth. Copying is an act of love, please&amp;nbsp;share.&lt;/p&gt;</summary><category term="bash"></category><category term="command-line"></category><category term="notes"></category><category term="append"></category><category term="history"></category><category term="fc"></category></entry><entry><title>Holiday Testing</title><link href="http://parobalth.github.io/test-post" rel="alternate"></link><updated>2015-12-29T21:06:00+01:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2015-12-28:test-post</id><summary type="html">&lt;p&gt;Using the holidays for some testing!
+&lt;code&gt;Happy Holidays&lt;/code&gt; to all of&amp;nbsp;you!&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;def foobar():&lt;/code&gt;&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Hello World&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;More&amp;nbsp;code:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;To follow the path
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Copyheart:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://copyheart.org"&gt;♡&lt;/a&gt;2015 by Parobalth. Copying is an act of love, please&amp;nbsp;share.&lt;/p&gt;</summary></entry><entry><title>Christmas Songs</title><link href="http://parobalth.github.io/christmas-songs" rel="alternate"></link><updated>2015-12-01T19:50:00+01:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2015-12-01:christmas-songs</id><summary type="html">&lt;p&gt;Christmas is coming! It&amp;#8217;s already December. To bring you into christmas mood I&amp;#8217;m sharing links to some of my favorite christmas&amp;nbsp;songs:&lt;/p&gt;
 &lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;Have Yourself a Merry Little Christmas&amp;#8221; by Frank Sinatra:
 &lt;a class="reference external" href="https://www.youtube.com/watch?v=nZ6yQgBvuoI"&gt;https://www.youtube.com/watch?v=nZ6yQgBvuoI&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;White Christmas&amp;#8221; Bing Crosby &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Martha Mears:
