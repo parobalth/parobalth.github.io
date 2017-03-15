@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Parobalth</title><link href="http://parobalth.github.io/" rel="alternate"></link><link href="http://parobalth.github.io/feeds/all.atom.xml" rel="self"></link><id>http://parobalth.github.io/</id><updated>2016-12-31T00:00:00+01:00</updated><entry><title>2016: Another year is over…</title><link href="http://parobalth.github.io/2016-summary" rel="alternate"></link><updated>2016-12-31T00:00:00+01:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2016-12-31:2016-summary</id><summary type="html">&lt;p&gt;This blogpost is about some computer related things I did in&amp;nbsp;2016:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Parobalth</title><link href="http://parobalth.github.io/" rel="alternate"></link><link href="http://parobalth.github.io/feeds/all.atom.xml" rel="self"></link><id>http://parobalth.github.io/</id><updated>2017-03-15T00:00:00+01:00</updated><entry><title>Moved to www.parobalth.org</title><link href="http://parobalth.github.io/blog-moved" rel="alternate"></link><updated>2017-03-15T00:00:00+01:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2017-03-15:blog-moved</id><summary type="html">&lt;p&gt;This blog moved to &lt;a href="https://www.parobalth.org"&gt;https://www.parobalth.org&lt;/a&gt;!&lt;br /&gt;
+New posts will appear there. I have not yet managed to setup redirects to the new domain.&lt;br /&gt;
+If you are following my rss feed please switch to &lt;a href="https://www.parobalth.org/feeds/all.rss.xml"&gt;https://www.parobalth.org/feeds/all.rss.xml&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;If you have any questions, suggestions, thoughts and comments please feel free to email&amp;nbsp;me.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;License of this blog&amp;nbsp;post:&lt;/p&gt;
+&lt;p&gt;&lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;&lt;img alt="Creative Commons License" style="border-width:0" src="./images/cc-88x31.png" /&gt;&lt;/a&gt;&lt;br /&gt;This work is licensed under a &lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;.&lt;/p&gt;</summary><category term="blog"></category></entry><entry><title>Holiday Testing</title><link href="http://parobalth.github.io/test-post" rel="alternate"></link><updated>2015-12-29T21:06:00+01:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2017-01-22:test-post</id><summary type="html">&lt;p&gt;Using the holidays for some testing!
+&lt;code&gt;Happy Holidays&lt;/code&gt; to all of&amp;nbsp;you!&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;def foobar():&lt;/code&gt;&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Hello World&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;More&amp;nbsp;code:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;To follow the path
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Copyheart:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://copyheart.org"&gt;♡&lt;/a&gt;2015 by Parobalth. Copying is an act of love, please&amp;nbsp;share.&lt;/p&gt;</summary></entry><entry><title>2016: Another year is over…</title><link href="http://parobalth.github.io/2016-summary" rel="alternate"></link><updated>2016-12-31T00:00:00+01:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2016-12-31:2016-summary</id><summary type="html">&lt;p&gt;This blogpost is about some computer related things I did in&amp;nbsp;2016:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;tested &lt;a href="https://wiki.debian.org/FreedomBox"&gt;Freedombox&lt;/a&gt; on a &lt;a href="https://wiki.debian.org/FreedomBox/Hardware/RaspberryPi2"&gt;Raspberry Pi&amp;nbsp;2&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;flashed &lt;a href="https://openwrt.org/"&gt;OpenWrt&lt;/a&gt; to an &lt;a href="https://wiki.openwrt.org/toh/linksys/wrt54g"&gt;old&amp;nbsp;router&lt;/a&gt;&lt;/li&gt;
@@ -190,7 +210,7 @@ HostName IP-adress-of-server
 &lt;p&gt;&lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;&lt;img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /&gt;&lt;/a&gt;&lt;br /&gt;This work is licensed under a &lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;.&lt;/p&gt;</summary><category term="ssh"></category></entry><entry><title>Thoughts about NextThing C.h.i.p.</title><link href="http://parobalth.github.io/chip-thoughts" rel="alternate"></link><updated>2016-11-27T00:00:00+01:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2016-08-01:chip-thoughts</id><summary type="html">&lt;p&gt;&lt;img alt="box" src="./images/box_small.JPG" /&gt;
 My thoughts about &lt;a href="https://getchip.com/pages/chip"&gt;NextThing C.h.i.p. v. 1.0&lt;/a&gt;:&lt;/p&gt;
 &lt;h2 id="from-ordering-to-delivery"&gt;From ordering to delivery&lt;a class="headerlink" href="#from-ordering-to-delivery" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;I know I have been lucky to recieve my Chip already (&lt;a href="https://bbs.nextthing.co/t/pre-order-shipping-updates-scaling-up-c-h-i-p-production/7282"&gt;further information&lt;/a&gt;) because I preordered before 31st of January. Later pre-orders are&amp;nbsp;delayed.&lt;/p&gt;
+&lt;p&gt;I know I have been lucky to recieve my Chip already (&lt;a href="https://bbs.nextthing.co/t/pre-order-shipping-updates-scaling-up-c-h-i-p-production/7282"&gt;further information&lt;/a&gt;) because I have preordered before 31st of January. Later pre-orders were&amp;nbsp;delayed.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;NextThing Co. promised me a 9 Dollar Computer &amp;#8212; NextThing delievered as&amp;nbsp;promised!&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -209,7 +229,7 @@ I recieved my C.h.i.p. last week. As far as I can tell right now everything went
 &lt;p&gt;&amp;#8230;but now to the important questions: Does it come with batteries included and with a fair amount of fairy dust? Is it enchanted and encoated by pixies? Is it the holy grail of singleboard&amp;nbsp;computers?&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id="thoughts-and-opinion"&gt;Thoughts and opinion&lt;a class="headerlink" href="#thoughts-and-opinion" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Let us just think how incredible this tiny computer is and how much you get for your $9! With this price tag it is an absolute no-brainer and you should definitely get one &amp;#8212; but it appears you will have to wait till&amp;nbsp;fall. &lt;/p&gt;
+&lt;p&gt;Let us just think how incredible this tiny computer is and how much you get for your $9! With this price tag it is an absolute no-brainer and you should definitely get one &amp;#8212; if you have the&amp;nbsp;opportunity.&lt;/p&gt;
 &lt;h3 id="things-i-like"&gt;Things I like&lt;a class="headerlink" href="#things-i-like" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Here are some reasons why I am quite excited about NextThings&amp;nbsp;C.h.i.p.: &lt;/p&gt;
 &lt;ul&gt;
@@ -238,7 +258,6 @@ I recieved my C.h.i.p. last week. As far as I can tell right now everything went
 &lt;li&gt;&lt;strong&gt;one tiny button&lt;/strong&gt; &amp;#8212; working like the power button on a normal&amp;nbsp;computer. &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="things-i-dont-like"&gt;Things I don&amp;#8217;t like&lt;a class="headerlink" href="#things-i-dont-like" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Warning &amp;#8212; work in progress: This is a quick&amp;amp;dirty section about some issues. Consider it as a first draft &amp;#8212; I am going to modify this section in the next few days and correct&amp;nbsp;typos.&lt;/p&gt;
 &lt;p&gt;Here are some points I don&amp;#8217;t like about NextThings C.h.i.p. It is important to note that I believe many of the points are only temporary issues because C.h.i.p. is still in its pre-order&amp;nbsp;phase: &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;restricted shipping&lt;/strong&gt; &amp;#8212; During the kickstarter and the early pre-order phase NextThing offered world wide shipping. Currently shipping countries are severly limited. It appears that this problem, which at first appeared temporary to me, turned into a permant one. You can&amp;#8217;t buy/ship a Chip to Poland, Portugal, Belgium, Austria, Czech republic, Slovenia and many more countries in the European&amp;nbsp;Union.&lt;/li&gt;
@@ -566,20 +585,7 @@ Hit &lt;code&gt;Enter&lt;/code&gt; to get back to your unmodified vim&amp;nbsp;b
 
 
 &lt;p&gt;Copyheart:
-&lt;a href="http://copyheart.org"&gt;♡&lt;/a&gt;2016 by Parobalth. Copying is an act of love, please&amp;nbsp;share.&lt;/p&gt;</summary><category term="bash"></category><category term="command-line"></category><category term="notes"></category><category term="append"></category><category term="history"></category><category term="fc"></category></entry><entry><title>Holiday Testing</title><link href="http://parobalth.github.io/test-post" rel="alternate"></link><updated>2015-12-29T21:06:00+01:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2015-12-31:test-post</id><summary type="html">&lt;p&gt;Using the holidays for some testing!
-&lt;code&gt;Happy Holidays&lt;/code&gt; to all of&amp;nbsp;you!&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;def foobar():&lt;/code&gt;&lt;/p&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Hello World&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-
-&lt;p&gt;More&amp;nbsp;code:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;To follow the path
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Copyheart:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://copyheart.org"&gt;♡&lt;/a&gt;2015 by Parobalth. Copying is an act of love, please&amp;nbsp;share.&lt;/p&gt;</summary></entry><entry><title>Christmas Songs</title><link href="http://parobalth.github.io/christmas-songs" rel="alternate"></link><updated>2015-12-01T19:50:00+01:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2015-12-01:christmas-songs</id><summary type="html">&lt;p&gt;Christmas is coming! It&amp;#8217;s already December. To bring you into christmas mood I&amp;#8217;m sharing links to some of my favorite christmas&amp;nbsp;songs:&lt;/p&gt;
+&lt;a href="http://copyheart.org"&gt;♡&lt;/a&gt;2016 by Parobalth. Copying is an act of love, please&amp;nbsp;share.&lt;/p&gt;</summary><category term="bash"></category><category term="command-line"></category><category term="notes"></category><category term="append"></category><category term="history"></category><category term="fc"></category></entry><entry><title>Christmas Songs</title><link href="http://parobalth.github.io/christmas-songs" rel="alternate"></link><updated>2015-12-01T19:50:00+01:00</updated><author><name>Parobalth</name></author><id>tag:parobalth.github.io,2015-12-01:christmas-songs</id><summary type="html">&lt;p&gt;Christmas is coming! It&amp;#8217;s already December. To bring you into christmas mood I&amp;#8217;m sharing links to some of my favorite christmas&amp;nbsp;songs:&lt;/p&gt;
 &lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;Have Yourself a Merry Little Christmas&amp;#8221; by Frank Sinatra:
 &lt;a class="reference external" href="https://www.youtube.com/watch?v=nZ6yQgBvuoI"&gt;https://www.youtube.com/watch?v=nZ6yQgBvuoI&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;White Christmas&amp;#8221; Bing Crosby &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Martha Mears:

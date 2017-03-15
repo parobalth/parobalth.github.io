@@ -5,29 +5,43 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://parobalth.github.io/</loc>
-<lastmod>2016-12-31T16:48:28-00:00</lastmod>
+<lastmod>2017-03-15T22:21:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://parobalth.github.io/archives.html</loc>
-<lastmod>2016-12-31T16:48:28-00:00</lastmod>
+<lastmod>2017-03-15T22:21:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://parobalth.github.io/tags.html</loc>
-<lastmod>2016-12-31T16:48:28-00:00</lastmod>
+<lastmod>2017-03-15T22:21:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://parobalth.github.io/categories.html</loc>
-<lastmod>2016-12-31T16:48:28-00:00</lastmod>
+<lastmod>2017-03-15T22:21:46-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://parobalth.github.io/blog-moved</loc>
+<lastmod>2017-03-15T00:00:00+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://parobalth.github.io/test-post</loc>
+<lastmod>2015-12-29T21:06:00+01:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -153,13 +167,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://parobalth.github.io/ncmd</loc>
 <lastmod>2016-02-17T21:06:00+01:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>http://parobalth.github.io/test-post</loc>
-<lastmod>2015-12-29T21:06:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
